@@ -14,7 +14,7 @@ body {
 .nav {
   position: relative;
   padding: 16px 32px;
-  background-color: #333;
+  background-color: #00c6f8;
   overflow: hidden;
 }
 
@@ -63,7 +63,7 @@ body {
 .main-content__title {
   font-size: 2rem;
   margin-bottom: 16px;
-  color: #333;
+  color: #0e8ec9;
 }
 
 .main-content__description {
