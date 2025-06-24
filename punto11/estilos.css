@@ -1,0 +1,88 @@
+/* ========================================================================== 
+   Base y estilos globales
+   ========================================================================== */
+* {
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+}
+
+body {
+    font-family: sans-serif; /* Fuente sin serifas */
+    background-color: #f8fafd; /* Fondo azul muy claro */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+.tabs__header-title{
+    font-size: 24px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Negrita */
+    color: #2563eb; /* Color azul */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    text-align: center; /* Centra el título */
+}
+.tabs__header-subtitle {
+    font-size: 18px; /* Tamaño de fuente mediano */
+    color: #4b5563; /* Color gris oscuro */
+    text-align: center; /* Centra el subtítulo */
+    margin-bottom: 30px; /* Espacio debajo del subtítulo */
+}
+
+.tabs__header-link {
+    display: inline-block; /* Permite padding */
+    background-color: #535aa1; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.2s ease; /* Transición suave */
+}
+
+.calificacion {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.calificacion__radio {
+  display: none;
+}
+
+.calificacion__label {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-right: 4px;
+  background: #e2e8f0;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.calificacion__radio:checked + .calificacion__label {
+  background: #2563eb;
+  color: #fff;
+  font-weight: bold;
+}
+
+.calificacion__label:last-child {
+  margin-right: 0;
+}
+
+.calificacion__button{
+    display: inline-block;
+    padding: 8px 16px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s, transform 0.2s ,;
+    ;
+}
+
+.calificacion__button:hover {
+    background: #1dc8d8; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
