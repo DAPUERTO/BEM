@@ -14,6 +14,16 @@
   color: #9c2020;
   border-bottom: 1px solid #1dc2d8;
 }
+.tabs__header-link {
+    display: inline-block; /* Permite padding */
+    background-color: #a15353; /* Fondo gris oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.2s ease; /* Transición suave */
+}
 
 .tabs__nav {
   border-bottom: 1px solid #ccc;
