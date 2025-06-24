@@ -52,8 +52,10 @@ body {
     color: #2563eb; /* Azul */
 }
 
+
 .reproductor-video__video {
     width: 100%; /* Ocupa todo el ancho */
     border-radius: 6px; /* Bordes redondeados */
     margin-bottom: 10px; /* Espacio inferior */
+    margin-top: 10px; /* Espacio superior */   
 }
