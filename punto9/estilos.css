@@ -1,0 +1,89 @@
+.tabs {
+  width: 400px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.tabs__header-title {
+  padding: 20px;
+  font-size: 34px;
+  text-align: center;
+  color: #9c2020;
+  border-bottom: 1px solid #1dc2d8;
+}
+
+.tabs__nav {
+  border-bottom: 1px solid #ccc;
+  padding: 10 10px;
+  text-align: left;
+  
+}
+
+.tabs__nav-link {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 4px;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.tabs__nav-link:target,
+.tabs__nav-link:focus,
+.tabs__nav-link:active {
+  outline: none;
+}
+
+.tabs__panel {
+  display: none;
+  padding: 20px;
+}
+
+.tabs__panel:target {
+  display: block;
+}
+
+/* Mostrar la primera pestaña por defecto si no hay :target */
+.tabs__panel:first-of-type {
+  display: block;
+}
+
+/* Estilos para la pestaña activa */
+.tabs__nav-link[href="#tab1"]:focus,
+.tabs__nav-link[href="#tab1"]:active,
+#tab1:target ~ .tabs__nav .tabs__nav-link[href="#tab1"],
+.tabs__panel:target ~ .tabs__nav .tabs__nav-link[href="#tab1"] {
+  border-bottom: 2px solid #0078d7;
+  color: #0078d7;
+  font-weight: bold;
+  background: #fff;
+}
+
+.tabs__nav-link[href="#tab2"]:focus,
+.tabs__nav-link[href="#tab2"]:active,
+#tab2:target ~ .tabs__nav .tabs__nav-link[href="#tab2"],
+.tabs__panel:target ~ .tabs__nav .tabs__nav-link[href="#tab2"] {
+  border-bottom: 2px solid #0078d7;
+  color: #0078d7;
+  font-weight: bold;
+  background: #fff;
+}
+
+.tabs__nav-link[href="#tab3"]:focus,
+.tabs__nav-link[href="#tab3"]:active,
+#tab3:target ~ .tabs__nav .tabs__nav-link[href="#tab3"],
+.tabs__panel:target ~ .tabs__nav .tabs__nav-link[href="#tab3"] {
+  border-bottom: 2px solid #0078d7;
+  color: #0078d7;
+  font-weight: bold;
+  background: #fff;
+}
+
