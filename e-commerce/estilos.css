@@ -81,6 +81,18 @@ body {
     /* Elimina el subrayado de los enlaces */
 }
 
+.main {
+    /* Estilos para el contenido principal de la página */
+    background-color: var(--color-background-white);
+    /* Establece el color de fondo usando variable CSS */
+    min-height: 100vh;
+    /* Establece una altura mínima del 100% de la altura de la ventana */
+    padding: 0;
+    /* Elimina el relleno interno por defecto */
+    margin: 0;
+    /* Elimina los márgenes por defecto */
+}
+
 .banner {
     /* Estilos para la sección del banner */
     background-color: var(--color-background-light);
