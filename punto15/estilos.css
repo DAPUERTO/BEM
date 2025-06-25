@@ -1,0 +1,198 @@
+/* ========================================================================== 
+   Variables CSS - Solo colores
+   ========================================================================== */
+:root {
+    /* Define las variables CSS globales para colores */
+    --color-primary: #e5e900;
+    /* Color principal amarillo para elementos destacados */
+    --color-text-dark: #333;
+    /* Color oscuro para texto principal */
+    --color-text-light: white;
+    /* Color claro para texto sobre fondos oscuros */
+    --color-background-light: #f4f4f4;
+    /* Color de fondo claro para el body */
+    --color-background-white: #fff;
+    /* Color blanco para fondos de tarjetas */
+    --color-border: #ddd;
+    /* Color gris claro para bordes */
+    --color-info: #17a2b8;
+    /* Color azul para tags y elementos informativos */
+}
+
+/* ========================================================================== 
+   Estilos globales
+   ========================================================================== */
+* {
+    /* Selector universal que aplica estilos a todos los elementos */
+    margin: 0;
+    /* Elimina todos los márgenes externos de todos los elementos */
+    padding: 0;
+    /* Elimina todo el relleno interno de todos los elementos */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho y alto total del elemento */
+}
+
+body {
+    /* Estilos para el elemento body (cuerpo de la página) */
+    font-family: Arial, sans-serif;
+    /* Define la fuente principal como Arial, con fallback a sans-serif */
+    background-color: var(--color-background-light);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-dark);
+    /* Define el color del texto usando variable CSS */
+    line-height: 1.6;
+    /* Establece la altura de línea para mejor legibilidad */
+}
+
+/* ========================================================================== 
+   Header
+   ========================================================================== */
+.header {
+    /* Estilos para el encabezado de la página */
+    background-color: var(--color-primary);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
+    padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.header__title {
+    /* Estilos para el título del header */
+    font-size: 28px;
+    /* Establece el tamaño de fuente como 28px */
+    font-weight: bold;
+    /* Hace que el texto sea negrita */
+}
+
+/* ========================================================================== 
+   Main
+   ========================================================================== */
+.main {
+    /* Estilos para el contenido principal */
+    max-width: 800px;
+    /* Limita el ancho máximo a 800px para pantallas grandes */
+    margin: 0 auto;
+    /* Centra el contenido horizontalmente */
+    padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
+}
+
+/* ========================================================================== 
+   Blog Post
+   ========================================================================== */
+.blog-post {
+    /* Estilos para el artículo del blog */
+    background: var(--color-background-white);
+    /* Establece el fondo usando variable CSS */
+    border-radius: 8px;
+    /* Redondea las esquinas con un radio de 8px */
+    padding: 30px;
+    /* Agrega relleno interno de 30px en todos los lados */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Agrega una sombra sutil */
+}
+
+.blog-post__title {
+    /* Estilos para el título principal del artículo */
+    font-size: 28px;
+    /* Establece el tamaño de fuente como 28px */
+    font-weight: bold;
+    /* Hace que el texto sea negrita */
+    margin-bottom: 15px;
+    /* Agrega margen inferior de 15px para separar de la meta información */
+    color: var(--color-text-dark);
+    /* Define el color del texto usando variable CSS */
+}
+
+.blog-post__meta {
+    /* Estilos para la información meta del artículo */
+    color: #666;
+    /* Define el color del texto como un gris medio */
+    font-size: 14px;
+    /* Establece el tamaño de fuente como 14px */
+    margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar de la imagen */
+}
+
+.blog-post__date {
+    /* Estilos para la fecha del artículo */
+    margin-right: 20px;
+    /* Agrega margen derecho de 20px para separar del autor */
+}
+
+.blog-post__image {
+    /* Estilos para el contenedor de la imagen */
+    margin-bottom: 25px;
+    /* Agrega margen inferior de 25px para separar del contenido */
+    text-align: center;
+    /* Centra la imagen horizontalmente */
+}
+
+.blog-post__image img {
+    /* Estilos para la imagen del artículo */
+    max-width: 100%;
+    /* Limita el ancho máximo al 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción de altura automáticamente */
+    border-radius: 8px;
+    /* Redondea las esquinas de la imagen */
+}
+
+.blog-post__content {
+    /* Estilos para el contenido del artículo */
+    margin-bottom: 25px;
+    /* Agrega margen inferior de 25px para separar de los tags */
+}
+
+.blog-post__subtitle {
+    /* Estilos para los subtítulos del artículo */
+    font-size: 20px;
+    /* Establece el tamaño de fuente como 20px */
+    font-weight: 600;
+    /* Hace que el texto sea semi-negrita */
+    margin: 20px 0 10px 0;
+    /* Agrega márgenes verticales: 20px arriba, 10px abajo */
+    color: var(--color-text-dark);
+    /* Define el color del texto usando variable CSS */
+}
+
+.blog-post__paragraph {
+    /* Estilos para los párrafos del artículo */
+    margin-bottom: 15px;
+    /* Agrega margen inferior de 15px entre párrafos */
+    font-size: 16px;
+    /* Establece el tamaño de fuente como 16px */
+    line-height: 1.6;
+    /* Establece la altura de línea para mejor legibilidad */
+}
+
+.blog-post__tags {
+    /* Estilos para la sección de tags */
+    border-top: 1px solid var(--color-border);
+    /* Agrega un borde superior sutil */
+    padding-top: 20px;
+    /* Agrega relleno superior de 20px */
+}
+
+.blog-post__tag {
+    /* Estilos para cada tag individual */
+    display: inline-block;
+    /* Hace que los tags se muestren en línea pero como bloques */
+    background: var(--color-info);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
+    padding: 5px 12px;
+    /* Agrega relleno interno de 5px vertical y 12px horizontal */
+    border-radius: 15px;
+    /* Redondea las esquinas para crear un efecto de píldora */
+    font-size: 12px;
+    /* Establece el tamaño de fuente como 12px */
+    margin-right: 10px;
+    /* Agrega margen derecho de 10px entre tags */
+    margin-bottom: 5px;
+    /* Agrega margen inferior de 5px para separación vertical */
+}

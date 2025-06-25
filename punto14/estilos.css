@@ -1,0 +1,269 @@
+/* ========================================================================== 
+   Variables CSS - Solo colores
+   ========================================================================== */
+:root {
+    /* Define las variables CSS globales para colores */
+    --color-primary: #e5e900;
+    /* Color principal amarillo para elementos destacados */
+    --color-text-dark: #333;
+    /* Color oscuro para texto principal */
+    --color-text-light: white;
+    /* Color claro para texto sobre fondos oscuros */
+    --color-background-light: #f4f4f4;
+    /* Color de fondo claro para el body */
+    --color-background-white: #fff;
+    /* Color blanco para fondos de tarjetas */
+    --color-background-dark: #333;
+    /* Color oscuro para fondos de tarjetas */
+    --color-border: #ddd;
+    /* Color gris claro para bordes */
+    --color-success: #28a745;
+    /* Color verde para precios y elementos positivos */
+}
+
+/* ========================================================================== 
+   Estilos globales
+   ========================================================================== */
+* {
+    /* Selector universal que aplica estilos a todos los elementos */
+    margin: 0;
+    /* Elimina todos los márgenes externos de todos los elementos */
+    padding: 0;
+    /* Elimina todo el relleno interno de todos los elementos */
+    box-sizing: border-box;
+    /* Incluye padding y border en el ancho y alto total del elemento */
+}
+
+body {
+    /* Estilos para el elemento body (cuerpo de la página) */
+    font-family: Arial, sans-serif;
+    /* Define la fuente principal como Arial, con fallback a sans-serif */
+    background-color: var(--color-background-light);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-dark);
+    /* Define el color del texto usando variable CSS */
+    line-height: 1.6;
+    /* Establece la altura de línea para mejor legibilidad */
+}
+
+/* ========================================================================== 
+   Header
+   ========================================================================== */
+.header {
+    /* Estilos para el encabezado de la página */
+    background-color: var(--color-primary);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
+    padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+}
+
+.header__title {
+    /* Estilos para el título del header */
+    font-size: 28px;
+    /* Establece el tamaño de fuente como 28px */
+    font-weight: bold;
+    /* Hace que el texto sea negrita */
+}
+
+/* ========================================================================== 
+   Main
+   ========================================================================== */
+.main {
+    /* Estilos para el contenido principal */
+    max-width: 800px;
+    /* Limita el ancho máximo a 800px para pantallas grandes */
+    margin: 0 auto;
+    /* Centra el contenido horizontalmente */
+    padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
+}
+
+/* ========================================================================== 
+   Cart
+   ========================================================================== */
+.cart__title {
+    /* Estilos para el título del carrito */
+    font-size: 24px;
+    /* Establece el tamaño de fuente como 24px */
+    margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar del contenido */
+    text-align: center;
+    /* Centra el texto horizontalmente */
+}
+
+.cart__items {
+    /* Estilos para la sección de elementos del carrito */
+    background: var(--color-background-white);
+    /* Establece el fondo usando variable CSS */
+    border-radius: 8px;
+    /* Redondea las esquinas con un radio de 8px */
+    padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
+    margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar del resumen */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Agrega una sombra sutil */
+}
+
+.cart-item {
+    /* Estilos para cada elemento individual del carrito */
+    overflow: hidden;
+    /* Contiene los elementos flotantes dentro del contenedor */
+    padding: 15px 0;
+    /* Agrega relleno vertical de 15px */
+    border-bottom: 1px solid var(--color-border);
+    /* Agrega un borde inferior sutil */
+}
+
+.cart-item:last-child {
+    /* Estilos para el último elemento del carrito */
+    border-bottom: none;
+    /* Elimina el borde inferior del último elemento */
+}
+
+.cart-item__image {
+    /* Estilos para las imágenes de los productos */
+    width: 60px;
+    /* Establece un ancho fijo de 60px */
+    height: 60px;
+    /* Establece una altura fija de 60px */
+    object-fit: cover;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 4px;
+    /* Redondea las esquinas de la imagen */
+    float: left;
+    /* Hace que la imagen flote a la izquierda */
+    margin-right: 15px;
+    /* Agrega margen derecho de 15px para separar del texto */
+}
+
+.cart-item__info {
+    /* Estilos para la información del producto */
+    overflow: hidden;
+    /* Contiene el float de la imagen */
+}
+
+.cart-item__title {
+    /* Estilos para el título del producto */
+    font-size: 16px;
+    /* Establece el tamaño de fuente como 16px */
+    font-weight: 600;
+    /* Hace que el texto sea semi-negrita */
+    margin-bottom: 5px;
+    /* Agrega margen inferior de 5px */
+}
+
+.cart-item__price {
+    /* Estilos para el precio del producto */
+    font-size: 14px;
+    /* Establece el tamaño de fuente como 14px */
+    color: var(--color-success);
+    /* Define el color del precio usando variable CSS */
+    font-weight: bold;
+    /* Hace que el texto sea negrita */
+}
+
+.cart-item__quantity {
+    /* Estilos para la cantidad del producto */
+    font-size: 14px;
+    /* Establece el tamaño de fuente como 14px */
+    color: #666;
+    /* Define el color del texto como un gris medio */
+    float: right;
+    /* Hace que la cantidad flote a la derecha */
+    margin-top: 10px;
+    /* Agrega margen superior de 10px */
+}
+
+/* ========================================================================== 
+   Cart Summary
+   ========================================================================== */
+.cart__summary {
+    /* Estilos para el resumen del carrito */
+    background: var(--color-background-white);
+    /* Establece el fondo usando variable CSS */
+    border-radius: 8px;
+    /* Redondea las esquinas con un radio de 8px */
+    padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* Agrega una sombra sutil */
+}
+
+.cart__row {
+    /* Estilos para las filas del resumen */
+    overflow: hidden;
+    /* Contiene los elementos flotantes */
+    padding: 10px 0;
+    /* Agrega relleno vertical de 10px */
+    border-bottom: 1px solid var(--color-border);
+    /* Agrega un borde inferior sutil */
+}
+
+.cart__row:last-child {
+    /* Estilos para la última fila */
+    border-bottom: none;
+    /* Elimina el borde inferior */
+}
+
+.cart__row span:first-child {
+    /* Estilos para la etiqueta (primer span) */
+    float: left;
+    /* Hace que la etiqueta flote a la izquierda */
+}
+
+.cart__row span:last-child {
+    /* Estilos para el valor (último span) */
+    float: right;
+    /* Hace que el valor flote a la derecha */
+}
+
+.cart__row--total {
+    /* Estilos para la fila del total */
+    font-weight: bold;
+    /* Hace que el texto sea negrita */
+    font-size: 18px;
+    /* Establece el tamaño de fuente como 18px */
+    border-top: 2px solid var(--color-border);
+    /* Agrega un borde superior más grueso */
+    margin-top: 10px;
+    /* Agrega margen superior de 10px */
+    padding-top: 15px;
+    /* Agrega relleno superior de 15px */
+}
+
+.cart__button {
+    /* Estilos para el botón del carrito */
+    background: var(--color-success);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
+    border: none;
+    /* Elimina el borde */
+    padding: 12px 24px;
+    /* Agrega relleno interno de 12px vertical y 24px horizontal */
+    border-radius: 6px;
+    /* Redondea las esquinas con un radio de 6px */
+    font-size: 16px;
+    /* Establece el tamaño de fuente como 16px */
+    font-weight: 600;
+    /* Hace que el texto sea semi-negrita */
+    cursor: pointer;
+    /* Cambia el cursor a una mano */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    margin-top: 20px;
+    /* Agrega margen superior de 20px */
+    display: block;
+    /* Hace que el botón sea un elemento de bloque */
+}
+
+.cart__button:hover {
+    /* Estilos aplicados cuando el cursor está sobre el botón */
+    background: #218838;
+    /* Cambia el color de fondo a un verde más oscuro */
+}

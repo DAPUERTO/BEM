@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma español -->
+<head>
+    <!-- Sección de metadatos del documento -->
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 para soporte completo de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles con ancho completo y escala inicial 1.0 -->
+    <title>Resumen de Carrito</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlaza el archivo CSS externo para los estilos de la página -->
+</head>
+<body>
+    <!-- Cuerpo principal del documento HTML -->
+
+    <header class="header">
+        <!-- Encabezado de la página con clase BEM para estilos -->
+        <h1 class="header__title">PUERTO SHOPPING</h1>
+        <!-- Título de la página con clase BEM -->
+    </header>
+
+    <main class="main">
+        <!-- Contenido principal de la página con elemento semántico main -->
+
+        <section class="cart">
+            <!-- Sección del resumen del carrito con clase BEM -->
+            <h2 class="cart__title">Resumen del Carrito</h2>
+            <!-- Título principal de la página con jerarquía H2 -->
+
+            <div class="cart__items">
+                <!-- Sección de elementos del carrito -->
+                <div class="cart-item">
+                    <!-- Elemento individual del carrito -->
+                    <img class="cart-item__image" src="../imagenes/oppo-a60-256gb-8gb-innovador-smartphone-blanco.jpg" alt="OPPO A60">
+                    <!-- Imagen del producto con clase BEM y texto alternativo -->
+                    
+                    <div class="cart-item__info">
+                        <!-- Detalles del producto -->
+                        <h3 class="cart-item__title">OPPO A60 256GB</h3>
+                        <!-- Título del producto con jerarquía H3 -->
+                        <p class="cart-item__price">$899.000</p>
+                        <!-- Precio del producto -->
+                    </div>
+
+                    <div class="cart-item__quantity">
+                        <!-- Controles de cantidad -->
+                        <span>Cantidad: 1</span>
+                        <!-- Texto informativo -->
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <!-- Segundo elemento del carrito -->
+                    <img class="cart-item__image" src="../imagenes/Redmi-Note-11-Azul-Ocaso.png" alt="Redmi Note 11">
+                    <!-- Imagen del producto Redmi -->
+                    
+                    <div class="cart-item__info">
+                        <!-- Detalles del producto Redmi -->
+                        <h3 class="cart-item__title">Redmi Note 11</h3>
+                        <!-- Título del producto Redmi -->
+                        <p class="cart-item__price">$1.199.000</p>
+                        <!-- Precio del producto Redmi -->
+                    </div>
+
+                    <div class="cart-item__quantity">
+                        <!-- Controles de cantidad para Redmi -->
+                        <span>Cantidad: 1</span>
+                        <!-- Texto informativo -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__summary">
+                <!-- Barra lateral del resumen del carrito -->
+                <div class="cart__row">
+                    <!-- Fila del resumen -->
+                    <span>Subtotal:</span>
+                    <!-- Etiqueta del subtotal -->
+                    <span>$2.098.000</span>
+                    <!-- Valor del subtotal -->
+                </div>
+
+                <div class="cart__row">
+                    <!-- Fila del envío -->
+                    <span>Envío:</span>
+                    <!-- Etiqueta del envío -->
+                    <span>$15.000</span>
+                    <!-- Valor del envío -->
+                </div>
+
+                <div class="cart__row cart__row--total">
+                    <!-- Fila del total -->
+                    <span>Total:</span>
+                    <!-- Etiqueta del total -->
+                    <span>$2.113.000</span>
+                    <!-- Valor del total -->
+                </div>
+                
+                <button class="cart__button">Proceder al Pago</button>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+
