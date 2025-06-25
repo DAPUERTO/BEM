@@ -1,48 +1,121 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+    <!-- Sección de metadatos del documento -->
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles, estableciendo el ancho al ancho del dispositivo y zoom inicial -->
     <title>Punto 4 - Lista de Tareas BEM</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="estilo.css">
+    <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <div class="container">
+    <!-- Contenedor principal que envuelve todo el contenido -->
+    <!-- Clase CSS "container" para aplicar estilos al contenedor principal -->
         <main class="main">
+        <!-- Elemento semántico main que contiene el contenido principal de la página -->
+        <!-- Clase CSS "main" siguiendo metodología BEM para el contenido principal -->
             <header class="header">
+            <!-- Elemento semántico header que contiene el encabezado de la página -->
+            <!-- Clase CSS "header" siguiendo metodología BEM para el encabezado -->
                 <h1 class="header__title">Punto 4</h1>
+                <!-- Encabezado de nivel 1 para el título principal -->
+                <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
                 <p class="header__subtitle">Componente de Lista de Tareas</p>
+                <!-- Párrafo con el subtítulo descriptivo -->
+                <!-- Clase CSS siguiendo metodología BEM para el subtítulo del encabezado -->
             </header>
 
             <!-- Componente de lista de tareas -->
             <section class="todo">
+            <!-- Elemento semántico section que contiene la lista de tareas -->
+            <!-- Clase CSS "todo" siguiendo metodología BEM para la sección de tareas -->
                 <div class="todo__container">
+                <!-- Contenedor interno para la lista de tareas -->
+                <!-- Clase CSS siguiendo metodología BEM para el contenedor de tareas -->
                     <h2 class="todo__title">Mi Lista de Tareas</h2>
+                    <!-- Encabezado de nivel 2 para el título de la lista -->
+                    <!-- Clase CSS siguiendo metodología BEM para el título de tareas -->
                     
                     <form class="todo-form">
+                    <!-- Elemento form para agregar nuevas tareas -->
+                    <!-- Clase CSS "todo-form" siguiendo metodología BEM para el formulario de tareas -->
                         <div class="todo-form__group">
+                        <!-- Contenedor para agrupar el campo de entrada y el botón -->
+                        <!-- Clase CSS siguiendo metodología BEM para agrupar elementos del formulario -->
                             <input type="text" id="task" name="task" class="todo-form__input" placeholder="Agregar nueva tarea..." required>
+                            <!-- Campo de entrada de texto para agregar nuevas tareas -->
+                            <!-- type="text" especifica que es un campo de texto -->
+                            <!-- id="task" identifica únicamente este campo -->
+                            <!-- name="task" es el nombre del campo que se enviará con el formulario -->
+                            <!-- Clase CSS siguiendo metodología BEM para los inputs del formulario -->
+                            <!-- placeholder muestra texto de ejemplo cuando el campo está vacío -->
+                            <!-- required hace que este campo sea obligatorio -->
                             <button type="submit" class="todo-form__button">Agregar</button>
+                            <!-- Botón para agregar la nueva tarea -->
+                            <!-- type="submit" especifica que es un botón de envío -->
+                            <!-- Clase CSS siguiendo metodología BEM para los botones del formulario -->
                         </div>
                     </form>
                     
                     <div class="todo-list">
+                    <!-- Contenedor para la lista de tareas existentes -->
+                    <!-- Clase CSS "todo-list" siguiendo metodología BEM para la lista de tareas -->
                         <div class="todo-list__item">
+                        <!-- Contenedor para cada tarea individual -->
+                        <!-- Clase CSS siguiendo metodología BEM para cada ítem de la lista -->
                             <input type="checkbox" id="task1" class="todo-list__checkbox">
+                            <!-- Checkbox para marcar la tarea como completada -->
+                            <!-- type="checkbox" especifica que es una casilla de verificación -->
+                            <!-- id="task1" identifica únicamente este checkbox -->
+                            <!-- Clase CSS siguiendo metodología BEM para los checkboxes -->
                             <label for="task1" class="todo-list__label">Completar proyecto BEM</label>
+                            <!-- Etiqueta asociada al checkbox de la primera tarea -->
+                            <!-- for="task1" vincula la etiqueta con el checkbox correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas de tareas -->
                             <button class="todo-list__delete">Eliminar</button>
+                            <!-- Botón para eliminar la tarea -->
+                            <!-- Clase CSS siguiendo metodología BEM para los botones de eliminar -->
                         </div>
                         
                         <div class="todo-list__item">
+                        <!-- Contenedor para la segunda tarea individual -->
+                        <!-- Clase CSS siguiendo metodología BEM para cada ítem de la lista -->
                             <input type="checkbox" id="task2" class="todo-list__checkbox">
+                            <!-- Checkbox para marcar la segunda tarea como completada -->
+                            <!-- type="checkbox" especifica que es una casilla de verificación -->
+                            <!-- id="task2" identifica únicamente este checkbox -->
+                            <!-- Clase CSS siguiendo metodología BEM para los checkboxes -->
                             <label for="task2" class="todo-list__label">Revisar documentación</label>
+                            <!-- Etiqueta asociada al checkbox de la segunda tarea -->
+                            <!-- for="task2" vincula la etiqueta con el checkbox correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas de tareas -->
                             <button class="todo-list__delete">Eliminar</button>
+                            <!-- Botón para eliminar la segunda tarea -->
+                            <!-- Clase CSS siguiendo metodología BEM para los botones de eliminar -->
                         </div>
                         
                         <div class="todo-list__item">
+                        <!-- Contenedor para la tercera tarea individual -->
+                        <!-- Clase CSS siguiendo metodología BEM para cada ítem de la lista -->
                             <input type="checkbox" id="task3" class="todo-list__checkbox">
+                            <!-- Checkbox para marcar la tercera tarea como completada -->
+                            <!-- type="checkbox" especifica que es una casilla de verificación -->
+                            <!-- id="task3" identifica únicamente este checkbox -->
+                            <!-- Clase CSS siguiendo metodología BEM para los checkboxes -->
                             <label for="task3" class="todo-list__label">Preparar presentación</label>
+                            <!-- Etiqueta asociada al checkbox de la tercera tarea -->
+                            <!-- for="task3" vincula la etiqueta con el checkbox correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas de tareas -->
                             <button class="todo-list__delete">Eliminar</button>
+                            <!-- Botón para eliminar la tercera tarea -->
+                            <!-- Clase CSS siguiendo metodología BEM para los botones de eliminar -->
                         </div>
                     </div>
                 </div>
@@ -50,4 +123,6 @@
         </main>
     </div>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->

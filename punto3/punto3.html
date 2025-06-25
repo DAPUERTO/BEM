@@ -1,48 +1,127 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+    <!-- Sección de metadatos del documento -->
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles, estableciendo el ancho al ancho del dispositivo y zoom inicial -->
     <title>Punto 3 - Formulario de Contacto BEM</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="estilos.css">
+    <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <div class="container">
+    <!-- Contenedor principal que envuelve todo el contenido -->
+    <!-- Clase CSS "container" para aplicar estilos al contenedor principal -->
         <main class="main">
+        <!-- Elemento semántico main que contiene el contenido principal de la página -->
+        <!-- Clase CSS "main" siguiendo metodología BEM para el contenido principal -->
             <header class="header">
+            <!-- Elemento semántico header que contiene el encabezado de la página -->
+            <!-- Clase CSS "header" siguiendo metodología BEM para el encabezado -->
                 <h1 class="header__title">Punto 3</h1>
+                <!-- Encabezado de nivel 1 para el título principal -->
+                <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
                 <p class="header__subtitle">Componente de Formulario de Contacto</p>
+                <!-- Párrafo con el subtítulo descriptivo -->
+                <!-- Clase CSS siguiendo metodología BEM para el subtítulo del encabezado -->
             </header>
 
             <!-- Componente de formulario de contacto -->
             <section class="contact">
+            <!-- Elemento semántico section que contiene el formulario de contacto -->
+            <!-- Clase CSS "contact" siguiendo metodología BEM para la sección de contacto -->
                 <div class="contact__container">
+                <!-- Contenedor interno para el formulario de contacto -->
+                <!-- Clase CSS siguiendo metodología BEM para el contenedor de contacto -->
                     <h2 class="contact__title">Contáctanos</h2>
+                    <!-- Encabezado de nivel 2 para el título del formulario -->
+                    <!-- Clase CSS siguiendo metodología BEM para el título de contacto -->
                     <p class="contact__description">¿Tienes alguna pregunta? Envíanos un mensaje y te responderemos pronto.</p>
+                    <!-- Párrafo con la descripción del formulario -->
+                    <!-- Clase CSS siguiendo metodología BEM para la descripción de contacto -->
                     
                     <form class="contact-form" action="#" method="POST">
+                    <!-- Elemento form para el formulario de contacto -->
+                    <!-- Clase CSS "contact-form" siguiendo metodología BEM para el formulario -->
+                    <!-- action="#" indica que el formulario se enviará a la misma página -->
+                    <!-- method="POST" especifica el método HTTP para enviar los datos -->
                         <div class="contact-form__group">
+                        <!-- Contenedor para agrupar el campo de nombre -->
+                        <!-- Clase CSS siguiendo metodología BEM para agrupar elementos del formulario -->
                             <label for="name" class="contact-form__label">Nombre completo</label>
+                            <!-- Etiqueta asociada al campo de entrada de nombre -->
+                            <!-- for="name" vincula la etiqueta con el input correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas del formulario -->
                             <input type="text" id="name" name="name" class="contact-form__input" required>
+                            <!-- Campo de entrada de texto para el nombre -->
+                            <!-- type="text" especifica que es un campo de texto -->
+                            <!-- id="name" identifica únicamente este campo -->
+                            <!-- name="name" es el nombre del campo que se enviará con el formulario -->
+                            <!-- Clase CSS siguiendo metodología BEM para los inputs del formulario -->
+                            <!-- required hace que este campo sea obligatorio -->
                         </div>
                         
                         <div class="contact-form__group">
+                        <!-- Contenedor para agrupar el campo de correo electrónico -->
+                        <!-- Clase CSS siguiendo metodología BEM para agrupar elementos del formulario -->
                             <label for="email" class="contact-form__label">Correo electrónico</label>
+                            <!-- Etiqueta asociada al campo de entrada de correo -->
+                            <!-- for="email" vincula la etiqueta con el input correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas del formulario -->
                             <input type="email" id="email" name="email" class="contact-form__input" required>
+                            <!-- Campo de entrada de correo electrónico -->
+                            <!-- type="email" especifica que es un campo de correo con validación automática -->
+                            <!-- id="email" identifica únicamente este campo -->
+                            <!-- name="email" es el nombre del campo que se enviará con el formulario -->
+                            <!-- Clase CSS siguiendo metodología BEM para los inputs del formulario -->
+                            <!-- required hace que este campo sea obligatorio -->
                         </div>
                         
                         <div class="contact-form__group">
+                        <!-- Contenedor para agrupar el campo de asunto -->
+                        <!-- Clase CSS siguiendo metodología BEM para agrupar elementos del formulario -->
                             <label for="subject" class="contact-form__label">Asunto</label>
+                            <!-- Etiqueta asociada al campo de entrada de asunto -->
+                            <!-- for="subject" vincula la etiqueta con el input correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas del formulario -->
                             <input type="text" id="subject" name="subject" class="contact-form__input" required>
+                            <!-- Campo de entrada de texto para el asunto -->
+                            <!-- type="text" especifica que es un campo de texto -->
+                            <!-- id="subject" identifica únicamente este campo -->
+                            <!-- name="subject" es el nombre del campo que se enviará con el formulario -->
+                            <!-- Clase CSS siguiendo metodología BEM para los inputs del formulario -->
+                            <!-- required hace que este campo sea obligatorio -->
                         </div>
                         
                         <div class="contact-form__group">
+                        <!-- Contenedor para agrupar el campo de mensaje -->
+                        <!-- Clase CSS siguiendo metodología BEM para agrupar elementos del formulario -->
                             <label for="message" class="contact-form__label">Mensaje</label>
+                            <!-- Etiqueta asociada al campo de entrada de mensaje -->
+                            <!-- for="message" vincula la etiqueta con el textarea correspondiente -->
+                            <!-- Clase CSS siguiendo metodología BEM para las etiquetas del formulario -->
                             <textarea id="message" name="message" class="contact-form__textarea" rows="5" required></textarea>
+                            <!-- Campo de área de texto para el mensaje -->
+                            <!-- id="message" identifica únicamente este campo -->
+                            <!-- name="message" es el nombre del campo que se enviará con el formulario -->
+                            <!-- Clase CSS siguiendo metodología BEM para los textareas del formulario -->
+                            <!-- rows="5" especifica que el textarea tendrá 5 filas de altura -->
+                            <!-- required hace que este campo sea obligatorio -->
                         </div>
                         
                         <div class="contact-form__group">
+                        <!-- Contenedor para agrupar el botón de envío -->
+                        <!-- Clase CSS siguiendo metodología BEM para agrupar elementos del formulario -->
                             <button type="submit" class="contact-form__button">Enviar mensaje</button>
+                            <!-- Botón para enviar el formulario -->
+                            <!-- type="submit" especifica que es un botón de envío -->
+                            <!-- Clase CSS siguiendo metodología BEM para los botones del formulario -->
                         </div>
                     </form>
                 </div>
@@ -50,4 +129,6 @@
         </main>
     </div>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->

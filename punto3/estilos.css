@@ -1,163 +1,278 @@
 /* Reset global */
 * {
+    /* Selector universal que aplica estilos a todos los elementos */
     margin: 0;
+    /* Elimina todos los márgenes externos de todos los elementos */
     padding: 0;
+    /* Elimina todo el relleno interno de todos los elementos */
     box-sizing: border-box;
+    /* Incluye padding y border en el ancho y alto total del elemento */
 }
 
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Define la fuente principal como Segoe UI con fallbacks a otras fuentes sans-serif */
     background: rgb(105, 102, 102);
+    /* Establece el color de fondo como un gris oscuro */
     min-height: 100vh;
+    /* Asegura que el body tenga al menos la altura completa de la ventana */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     line-height: 1.6;
+    /* Establece la altura de línea para mejor legibilidad */
 }
 
 /* Contenedor principal */
 .container {
+    /* Estilos para el contenedor principal de la página */
     max-width: 1200px;
+    /* Limita el ancho máximo a 1200px para pantallas grandes */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente usando márgenes automáticos */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
 }
 
 /* Header */
 .header {
+    /* Estilos para el encabezado de la página */
     text-align: center;
+    /* Centra todo el contenido del encabezado horizontalmente */
     margin-bottom: 60px;
+    /* Agrega margen inferior de 60px para separar del siguiente elemento */
     padding: 40px 0;
+    /* Agrega relleno interno de 40px vertical y 0 horizontal */
 }
 
 .header__title {
+    /* Estilos para el título principal del encabezado */
     font-size: 3.5rem;
+    /* Establece el tamaño de fuente como 3.5 veces el tamaño base */
     color: white;
+    /* Define el color del texto como blanco */
     margin-bottom: 15px;
+    /* Agrega margen inferior de 15px para separar del subtítulo */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    /* Agrega una sombra de texto para mejor contraste */
     font-weight: 700;
+    /* Hace que el texto sea muy negrita */
 }
 
 .header__subtitle {
+    /* Estilos para el subtítulo del encabezado */
     font-size: 1.3rem;
+    /* Establece el tamaño de fuente como 1.3 veces el tamaño base */
     color: rgba(255,255,255,0.9);
+    /* Define el color del texto como blanco con 90% de opacidad */
     font-weight: 300;
+    /* Hace que el texto sea ligero */
 }
 
 /* Componente de formulario de contacto */
 .contact {
+    /* Estilos para la sección de contacto */
     margin-bottom: 80px;
+    /* Agrega margen inferior de 80px para separar del siguiente elemento */
 }
 
 .contact__container {
+    /* Estilos para el contenedor del formulario de contacto */
     max-width: 700px;
+    /* Limita el ancho máximo a 700px para el formulario */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente */
     background: white;
+    /* Establece el fondo del contenedor como blanco */
     border-radius: 20px;
+    /* Redondea las esquinas del contenedor con un radio de 20px */
     padding: 50px;
+    /* Agrega relleno interno de 50px en todos los lados */
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    /* Agrega una sombra sutil debajo del contenedor */
     position: relative;
+    /* Establece posicionamiento relativo para elementos absolutos internos */
     overflow: hidden;
+    /* Oculta cualquier contenido que se salga del contenedor */
 }
 
 .contact__container::before {
+    /* Pseudo-elemento que crea una línea decorativa en la parte superior */
     content: '';
+    /* Define el contenido del pseudo-elemento como vacío */
     position: absolute;
+    /* Posiciona el elemento de forma absoluta */
     top: 0;
+    /* Lo coloca en la parte superior */
     left: 0;
+    /* Lo coloca en el borde izquierdo */
     right: 0;
+    /* Se extiende hasta el borde derecho */
     height: 5px;
+    /* Establece la altura de la línea en 5px */
     background: linear-gradient(90deg, #667eea, #764ba2);
+    /* Crea un gradiente lineal de azul a púrpura */
 }
 
 .contact__title {
+    /* Estilos para el título del formulario de contacto */
     font-size: 2.8rem;
+    /* Establece el tamaño de fuente como 2.8 veces el tamaño base */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     text-align: center;
+    /* Centra el texto horizontalmente */
     margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar del siguiente elemento */
     font-weight: 600;
+    /* Hace que el texto sea semi-negrita */
 }
 
 .contact__description {
+    /* Estilos para la descripción del formulario */
     text-align: center;
+    /* Centra el texto horizontalmente */
     color: #666;
+    /* Define el color del texto como un gris medio */
     font-size: 1.2rem;
+    /* Establece el tamaño de fuente como 1.2 veces el tamaño base */
     margin-bottom: 50px;
+    /* Agrega margen inferior de 50px para separar del formulario */
     line-height: 1.6;
+    /* Establece la altura de línea para mejor legibilidad */
 }
 
 /* Formulario */
 .contact-form {
+    /* Estilos para el formulario de contacto */
     width: 100%;
+    /* El formulario ocupa todo el ancho disponible */
 }
 
 .contact-form__group {
+    /* Estilos para cada grupo de campos del formulario */
     margin-bottom: 30px;
+    /* Agrega margen inferior de 30px para separar los grupos */
 }
 
 .contact-form__label {
+    /* Estilos para las etiquetas de los campos del formulario */
     display: block;
+    /* Hace que cada etiqueta ocupe toda una línea */
     font-weight: 600;
+    /* Hace que el texto sea semi-negrita */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del campo */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
     text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
     letter-spacing: 0.5px;
+    /* Agrega espaciado entre letras de 0.5px */
 }
 
 .contact-form__input,
 .contact-form__textarea {
+    /* Estilos compartidos para inputs y textareas */
     width: 100%;
+    /* Los campos ocupan todo el ancho disponible */
     padding: 18px;
+    /* Agrega relleno interno de 18px en todos los lados */
     border: 2px solid #e1e5e9;
+    /* Agrega un borde de 2px sólido en color gris claro */
     border-radius: 12px;
+    /* Redondea las esquinas de los campos con un radio de 12px */
     font-size: 1.1rem;
+    /* Establece el tamaño de fuente como 1.1 veces el tamaño base */
     font-family: inherit;
+    /* Hereda la fuente del elemento padre */
     transition: all 0.3s ease;
+    /* Aplica una transición suave de 0.3s para todos los cambios */
     background: #f8f9fa;
+    /* Establece el fondo de los campos como un gris muy claro */
 }
 
 .contact-form__input:focus,
 .contact-form__textarea:focus {
+    /* Estilos aplicados cuando los campos están enfocados */
     outline: none;
+    /* Elimina el contorno por defecto del navegador */
     border-color: #667eea;
+    /* Cambia el color del borde a azul cuando está enfocado */
     background: white;
+    /* Cambia el fondo a blanco cuando está enfocado */
     box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    /* Agrega una sombra azul sutil alrededor del campo */
     transform: translateY(-2px);
+    /* Mueve el campo 2px hacia arriba para un efecto de elevación */
 }
 
 .contact-form__textarea {
+    /* Estilos específicos para el textarea */
     resize: vertical;
+    /* Permite redimensionar solo verticalmente */
     min-height: 140px;
+    /* Establece una altura mínima de 140px */
 }
 
 .contact-form__button {
+    /* Estilos para el botón de envío del formulario */
     width: 100%;
+    /* El botón ocupa todo el ancho disponible */
     padding: 18px 30px;
+    /* Agrega relleno interno de 18px vertical y 30px horizontal */
     background: rgb(0, 0, 0);
+    /* Establece el color de fondo del botón como negro */
     color: white;
+    /* Define el color del texto como blanco */
     border: none;
+    /* Elimina el borde del botón */
     border-radius: 12px;
+    /* Redondea las esquinas del botón con un radio de 12px */
     font-size: 1.2rem;
+    /* Establece el tamaño de fuente como 1.2 veces el tamaño base */
     font-weight: 600;
+    /* Hace que el texto sea semi-negrita */
     cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
     transition: all 0.3s ease;
+    /* Aplica una transición suave de 0.3s para todos los cambios */
     text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
     letter-spacing: 1px;
+    /* Agrega espaciado entre letras de 1px */
     position: relative;
+    /* Establece posicionamiento relativo para elementos absolutos internos */
     overflow: hidden;
+    /* Oculta cualquier contenido que se salga del botón */
 }
 
 .contact-form__button::before {
+    /* Pseudo-elemento que crea un efecto de brillo en el botón */
     content: '';
+    /* Define el contenido del pseudo-elemento como vacío */
     position: absolute;
+    /* Posiciona el elemento de forma absoluta */
     top: 0;
+    /* Lo coloca en la parte superior */
     left: -100%;
+    /* Lo coloca fuera del botón hacia la izquierda */
     width: 100%;
+    /* Ocupa todo el ancho del botón */
     height: 100%;
+    /* Ocupa toda la altura del botón */
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    /* Crea un gradiente de brillo */
     transition: left 0.5s;
+    /* Aplica una transición suave de 0.5s para el movimiento */
 }
 
 .contact-form__button:hover {
+    /* Estilos aplicados cuando el cursor está sobre el botón */
     background: rgb(221, 165, 165); 
+    /* Cambia el color de fondo a un rosa claro */
 }
 
 
@@ -165,12 +280,18 @@ body {
 /* Estados de validación */
 .contact-form__input:invalid,
 .contact-form__textarea:invalid {
+    /* Estilos para campos con contenido inválido */
     border-color: #3f3a3a;
+    /* Cambia el color del borde a un gris oscuro */
     background: #fff5f5;
+    /* Cambia el fondo a un rosa muy claro */
 }
 
 .contact-form__input:valid,
 .contact-form__textarea:valid {
+    /* Estilos para campos con contenido válido */
     border-color: #27ae60;
+    /* Cambia el color del borde a verde */
     background: #f0fff4;
+    /* Cambia el fondo a un verde muy claro */
 }

@@ -2,87 +2,149 @@
    Base y estilos globales
    ========================================================================== */
 * {
+    /* Selector universal que aplica estilos a todos los elementos */
     padding: 0; /* Elimina el padding por defecto */
+    /* Elimina todo el relleno interno de todos los elementos */
     margin: 0; /* Elimina el margen por defecto */
+    /* Elimina todos los márgenes externos de todos los elementos */
     box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+    /* Incluye padding y border en el ancho y alto total del elemento */
 }
 
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: sans-serif; /* Fuente sin serifas */
+    /* Define la fuente principal como sans-serif genérica */
     background-color: #f8fafd; /* Fondo azul muy claro */
+    /* Establece el color de fondo como un azul muy claro */
     color: #333; /* Color de texto gris oscuro */
+    /* Define el color del texto como un gris oscuro */
 }
 
 .tabs__header-title{
+    /* Estilos para el título del encabezado */
     font-size: 24px; /* Tamaño de fuente grande */
+    /* Establece el tamaño de fuente como 24px */
     font-weight: bold; /* Negrita */
+    /* Hace que el texto sea negrita */
     color: #2563eb; /* Color azul */
+    /* Define el color del texto como azul */
     margin-bottom: 20px; /* Espacio debajo del título */
+    /* Agrega margen inferior de 20px para separar del siguiente elemento */
     text-align: center; /* Centra el título */
+    /* Centra el texto horizontalmente */
 }
 .tabs__header-subtitle {
+    /* Estilos para el subtítulo del encabezado */
     font-size: 18px; /* Tamaño de fuente mediano */
+    /* Establece el tamaño de fuente como 18px */
     color: #4b5563; /* Color gris oscuro */
+    /* Define el color del texto como un gris oscuro */
     text-align: center; /* Centra el subtítulo */
+    /* Centra el texto horizontalmente */
     margin-bottom: 30px; /* Espacio debajo del subtítulo */
+    /* Agrega margen inferior de 30px para separar del siguiente elemento */
 }
 
 .tabs__header-link {
+    /* Estilos para el enlace del encabezado */
     display: inline-block; /* Permite padding */
+    /* Hace que el enlace se comporte como un bloque en línea */
     background-color: #535aa1; /* Fondo gris oscuro */
+    /* Establece el color de fondo como un azul grisáceo */
     color: #fff; /* Texto blanco */
+    /* Define el color del texto como blanco */
     padding: 10px 20px; /* Espaciado interno */
+    /* Agrega relleno interno de 10px vertical y 20px horizontal */
     text-decoration: none; /* Sin subrayado */
+    /* Elimina el subrayado del enlace */
     border-radius: 5px; /* Bordes redondeados */
+    /* Redondea las esquinas del enlace con un radio de 5px */
     font-size: 16px; /* Tamaño de fuente */
+    /* Establece el tamaño de fuente como 16px */
     transition: background-color 0.2s ease; /* Transición suave */
+    /* Aplica una transición suave de 0.2s para cambios de color de fondo */
 }
 
 .calificacion {
+  /* Estilos para el componente de calificación */
   text-align: center;
+  /* Centra todo el contenido horizontalmente */
   margin: 20px 0;
+  /* Agrega margen de 20px vertical y 0 horizontal */
 }
 
 .calificacion__radio {
+  /* Estilos para los botones de radio de calificación */
   display: none;
+  /* Oculta los botones de radio por defecto */
 }
 
 .calificacion__label {
+  /* Estilos para las etiquetas de calificación */
   display: inline-block;
+  /* Hace que cada etiqueta se comporte como un bloque en línea */
   padding: 8px 14px;
+  /* Agrega relleno interno de 8px vertical y 14px horizontal */
   margin-right: 4px;
+  /* Agrega margen derecho de 4px para separar las etiquetas */
   background: #e2e8f0;
+  /* Establece el fondo de las etiquetas como un gris claro */
   color: #333;
+  /* Define el color del texto como un gris oscuro */
   border-radius: 4px;
+  /* Redondea las esquinas de las etiquetas con un radio de 4px */
   cursor: pointer;
+  /* Cambia el cursor a una mano cuando se pasa sobre las etiquetas */
   font-size: 16px;
+  /* Establece el tamaño de fuente como 16px */
   transition: background 0.2s, color 0.2s;
+  /* Aplica transiciones suaves de 0.2s para cambios de fondo y color */
 }
 
 .calificacion__radio:checked + .calificacion__label {
+  /* Estilos para las etiquetas cuando el radio está seleccionado */
   background: #2563eb;
+  /* Cambia el fondo a azul */
   color: #fff;
+  /* Cambia el color del texto a blanco */
   font-weight: bold;
+  /* Hace que el texto sea negrita */
 }
 
 .calificacion__label:last-child {
+  /* Estilos para la última etiqueta de calificación */
   margin-right: 0;
+  /* Elimina el margen derecho de la última etiqueta */
 }
 
 .calificacion__button{
+    /* Estilos para el botón de calificación */
     display: inline-block;
+    /* Hace que el botón se comporte como un bloque en línea */
     padding: 8px 16px;
+    /* Agrega relleno interno de 8px vertical y 16px horizontal */
     background: #2563eb;
+    /* Establece el color de fondo del botón como azul */
     color: #fff;
+    /* Define el color del texto como blanco */
     border: none;
+    /* Elimina el borde del botón */
     border-radius: 4px;
+    /* Redondea las esquinas del botón con un radio de 4px */
     cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
     font-size: 16px;
+    /* Establece el tamaño de fuente como 16px */
     transition: background 0.2s, transform 0.2s ,;
+    /* Aplica transiciones suaves de 0.2s para cambios de fondo y transformación */
     ;
 }
 
 .calificacion__button:hover {
+    /* Estilos aplicados cuando el cursor está sobre el botón */
     background: #1dc8d8; /* Color más oscuro al pasar el ratón */
+    /* Cambia el color de fondo a un azul más claro */
     transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    /* Aumenta ligeramente el tamaño del botón (5% más grande) */
 }

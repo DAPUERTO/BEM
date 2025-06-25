@@ -1,99 +1,164 @@
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: Arial, sans-serif;
+    /* Define la fuente principal como Arial, con fallback a sans-serif */
     background-color: #f0f0f0;
+    /* Establece el color de fondo como un gris claro */
     margin: 0;
+    /* Elimina todos los márgenes externos */
     padding: 0;
+    /* Elimina todo el relleno interno */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
 }
 
 .container {
+    /* Estilos para el contenedor principal de la página */
     max-width: 800px;
+    /* Limita el ancho máximo a 800px para pantallas grandes */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente usando márgenes automáticos */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
 }
 
 .header {
+    /* Estilos para el encabezado de la página */
     text-align: center;
+    /* Centra todo el contenido del encabezado horizontalmente */
     margin-bottom: 30px;
+    /* Agrega margen inferior de 30px para separar del siguiente elemento */
     background-color: white;
+    /* Establece el fondo del encabezado como blanco */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
     border-radius: 5px;
+    /* Redondea las esquinas del encabezado con un radio de 5px */
 }
 
 .header__title {
+    /* Estilos para el título principal del encabezado */
     font-size: 2rem;
+    /* Establece el tamaño de fuente como 2 veces el tamaño base */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del siguiente elemento */
 }
 
 
 .content {
+    /* Estilos para la sección de contenido principal */
     background-color: white;
+    /* Establece el fondo de la sección como blanco */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
     margin-bottom: 30px;
+    /* Agrega margen inferior de 30px para separar del footer */
     border-radius: 5px;
+    /* Redondea las esquinas de la sección con un radio de 5px */
 }
 
 .content__title {
+    /* Estilos para el título del contenido */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     font-size: 1.5rem;
+    /* Establece el tamaño de fuente como 1.5 veces el tamaño base */
     margin-bottom: 15px;
+    /* Agrega margen inferior de 15px para separar del texto */
 }
 
 .content__text {
+    /* Estilos para el texto del contenido */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
     line-height: 1.5;
+    /* Establece la altura de línea para mejor legibilidad */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar párrafos */
 }
 
 /* Footer Sencillo */
 .footer {
+    /* Estilos para el pie de página */
     background-color: #3c2f3b;
+    /* Establece el color de fondo como un marrón oscuro */
     color: white;
+    /* Define el color del texto como blanco */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
     text-align: center;
+    /* Centra todo el contenido del footer horizontalmente */
 }
 
 .footer__content {
+    /* Estilos para el contenedor del contenido del footer */
     max-width: 800px;
+    /* Limita el ancho máximo a 800px para pantallas grandes */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente usando márgenes automáticos */
 }
 
 .footer__section {
+    /* Estilos para cada sección del footer */
     margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar las secciones */
 }
 
 .footer__title {
+    /* Estilos para los títulos de las secciones del footer */
     color: #fff;
+    /* Define el color del texto como blanco */
     font-size: 1.2rem;
+    /* Establece el tamaño de fuente como 1.2 veces el tamaño base */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del contenido */
 }
 
 .footer__links {
+    /* Estilos para las listas de enlaces del footer */
     list-style: none;
+    /* Elimina los marcadores de lista (puntos) */
     padding: 0;
+    /* Elimina el relleno interno por defecto */
     margin: 0;
+    /* Elimina los márgenes por defecto */
 }
 
 .footer__text {
+    /* Estilos para el texto descriptivo del footer */
     font-size: 0.9rem;
+    /* Establece el tamaño de fuente como 0.9 veces el tamaño base */
     color: #ca6666;
+    /* Define el color del texto como un rojo claro */
 }
 
 .footer__bottom {
+    /* Estilos para la parte inferior del footer */
     margin-top: 20px;
+    /* Agrega margen superior de 20px para separar del contenido principal */
     padding-top: 15px;
+    /* Agrega relleno interno superior de 15px */
     border-top: 1px solid #555;
+    /* Agrega un borde superior de 1px sólido en color gris */
 }
 
 .footer__copyright {
+    /* Estilos para el texto de copyright */
     font-size: 0.8rem;
+    /* Establece el tamaño de fuente como 0.8 veces el tamaño base */
     color: #ac7878;
+    /* Define el color del texto como un marrón claro */
     margin-bottom: 5px;
+    /* Agrega margen inferior de 5px para separar del siguiente elemento */
 }
 
 .footer__fun-text {
+    /* Estilos para el texto divertido del footer */
     font-size: 0.9rem;
+    /* Establece el tamaño de fuente como 0.9 veces el tamaño base */
     color: #ccc;
+    /* Define el color del texto como un gris claro */
 }
 

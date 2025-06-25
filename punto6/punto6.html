@@ -1,27 +1,67 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+    <!-- Sección de metadatos del documento -->
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles, estableciendo el ancho al ancho del dispositivo y zoom inicial -->
     <title>Punto 6 - Componente de Alerta BEM</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="estilo.css">
+    <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <div class="container">
+    <!-- Contenedor principal que envuelve todo el contenido -->
+    <!-- Clase CSS "container" para aplicar estilos al contenedor principal -->
         <main class="main">
+        <!-- Elemento semántico main que contiene el contenido principal de la página -->
+        <!-- Clase CSS "main" siguiendo metodología BEM para el contenido principal -->
             <header class="header">
+            <!-- Elemento semántico header que contiene el encabezado de la página -->
+            <!-- Clase CSS "header" siguiendo metodología BEM para el encabezado -->
                 <h1 class="header__title">Punto 6</h1>
+                <!-- Encabezado de nivel 1 para el título principal -->
+                <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
                 <p class="header__subtitle">Componente de Alerta o Notificación</p>
+                <!-- Párrafo con el subtítulo descriptivo -->
+                <!-- Clase CSS siguiendo metodología BEM para el subtítulo del encabezado -->
             </header>
             <section class="alert-demo">
+            <!-- Elemento semántico section que contiene la demostración de alertas -->
+            <!-- Clase CSS "alert-demo" siguiendo metodología BEM para la sección de demostración -->
                 <a href="#alerta1" class="alert-demo__show">Mostrar alerta de éxito</a>
+                <!-- Enlace que activa la visualización de la alerta -->
+                <!-- href="#alerta1" apunta al elemento con id "alerta1" -->
+                <!-- Clase CSS siguiendo metodología BEM para el enlace de mostrar alerta -->
                 <div id="alerta1" class="alert alert--success alert--target">
+                <!-- Contenedor de la alerta de éxito -->
+                <!-- id="alerta1" identifica únicamente este elemento para el enlace -->
+                <!-- Clase CSS "alert" siguiendo metodología BEM para el componente de alerta -->
+                <!-- Clase CSS "alert--success" siguiendo metodología BEM para el modificador de éxito -->
+                <!-- Clase CSS "alert--target" siguiendo metodología BEM para el modificador de objetivo -->
                     <span class="alert__icon">✔️</span>
+                    <!-- Elemento span que contiene el ícono de éxito -->
+                    <!-- Clase CSS siguiendo metodología BEM para el ícono de la alerta -->
+                    <!-- El emoji ✔️ representa visualmente el éxito -->
                     <span class="alert__message">¡Operación realizada con éxito!</span>
+                    <!-- Elemento span que contiene el mensaje de la alerta -->
+                    <!-- Clase CSS siguiendo metodología BEM para el mensaje de la alerta -->
                     <a href="#" class="alert__close" aria-label="Cerrar">✖</a>
+                    <!-- Enlace para cerrar la alerta -->
+                    <!-- href="#" indica que es un enlace sin destino específico -->
+                    <!-- Clase CSS siguiendo metodología BEM para el botón de cerrar -->
+                    <!-- aria-label="Cerrar" proporciona texto descriptivo para lectores de pantalla -->
+                    <!-- El emoji ✖ representa visualmente el botón de cerrar -->
                 </div>
             </section>
         </main>
     </div>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->

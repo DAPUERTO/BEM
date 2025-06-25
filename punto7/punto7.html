@@ -1,46 +1,116 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+    <!-- Sección de metadatos del documento -->
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles, estableciendo el ancho al ancho del dispositivo y zoom inicial -->
     <title>Punto 7 - Componente de Tabla de Datos BEM</title>
+    <!-- Define el título de la página que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="estilo.css">
+    <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <div class="container">
+    <!-- Contenedor principal que envuelve todo el contenido -->
+    <!-- Clase CSS "container" para aplicar estilos al contenedor principal -->
         <main class="main">
+        <!-- Elemento semántico main que contiene el contenido principal de la página -->
+        <!-- Clase CSS "main" siguiendo metodología BEM para el contenido principal -->
             <header class="header">
+            <!-- Elemento semántico header que contiene el encabezado de la página -->
+            <!-- Clase CSS "header" siguiendo metodología BEM para el encabezado -->
                 <h1 class="header__title">Punto 7</h1>
+                <!-- Encabezado de nivel 1 para el título principal -->
+                <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
                 <p class="header__subtitle">Componente de Tabla de Datos</p>
+                <!-- Párrafo con el subtítulo descriptivo -->
+                <!-- Clase CSS siguiendo metodología BEM para el subtítulo del encabezado -->
             </header>
             <section class="data-table-demo">
+            <!-- Elemento semántico section que contiene la demostración de la tabla de datos -->
+            <!-- Clase CSS "data-table-demo" siguiendo metodología BEM para la sección de demostración -->
                 <table class="data-table">
+                <!-- Elemento table para crear la tabla de datos -->
+                <!-- Clase CSS "data-table" siguiendo metodología BEM para el componente de tabla -->
                     <thead class="data-table__head">
+                    <!-- Elemento thead que contiene el encabezado de la tabla -->
+                    <!-- Clase CSS siguiendo metodología BEM para el encabezado de la tabla -->
                         <tr class="data-table__row">
+                        <!-- Elemento tr que define una fila del encabezado -->
+                        <!-- Clase CSS siguiendo metodología BEM para las filas de la tabla -->
                             <th class="data-table__cell data-table__cell--head">ID</th>
+                            <!-- Elemento th que define una celda de encabezado para la columna ID -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
+                            <!-- Clase CSS "data-table__cell--head" siguiendo metodología BEM para el modificador de encabezado -->
                             <th class="data-table__cell data-table__cell--head">Nombre</th>
+                            <!-- Elemento th que define una celda de encabezado para la columna Nombre -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
+                            <!-- Clase CSS "data-table__cell--head" siguiendo metodología BEM para el modificador de encabezado -->
                             <th class="data-table__cell data-table__cell--head">Correo</th>
+                            <!-- Elemento th que define una celda de encabezado para la columna Correo -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
+                            <!-- Clase CSS "data-table__cell--head" siguiendo metodología BEM para el modificador de encabezado -->
                             <th class="data-table__cell data-table__cell--head">Rol</th>
+                            <!-- Elemento th que define una celda de encabezado para la columna Rol -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
+                            <!-- Clase CSS "data-table__cell--head" siguiendo metodología BEM para el modificador de encabezado -->
                         </tr>
                     </thead>
                     <tbody class="data-table__body">
+                    <!-- Elemento tbody que contiene el cuerpo de la tabla -->
+                    <!-- Clase CSS siguiendo metodología BEM para el cuerpo de la tabla -->
                         <tr class="data-table__row">
+                        <!-- Elemento tr que define la primera fila de datos -->
+                        <!-- Clase CSS siguiendo metodología BEM para las filas de la tabla -->
                             <td class="data-table__cell">1</td>
+                            <!-- Elemento td que define una celda de datos con el ID 1 -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">Ana López</td>
+                            <!-- Elemento td que define una celda de datos con el nombre Ana López -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">ana@example.com</td>
+                            <!-- Elemento td que define una celda de datos con el correo de Ana -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">Administrador</td>
+                            <!-- Elemento td que define una celda de datos con el rol Administrador -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                         </tr>
                         <tr class="data-table__row">
+                        <!-- Elemento tr que define la segunda fila de datos -->
+                        <!-- Clase CSS siguiendo metodología BEM para las filas de la tabla -->
                             <td class="data-table__cell">2</td>
+                            <!-- Elemento td que define una celda de datos con el ID 2 -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">Juan Pérez</td>
+                            <!-- Elemento td que define una celda de datos con el nombre Juan Pérez -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">juan@example.com</td>
+                            <!-- Elemento td que define una celda de datos con el correo de Juan -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">Usuario</td>
+                            <!-- Elemento td que define una celda de datos con el rol Usuario -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                         </tr>
                         <tr class="data-table__row">
+                        <!-- Elemento tr que define la tercera fila de datos -->
+                        <!-- Clase CSS siguiendo metodología BEM para las filas de la tabla -->
                             <td class="data-table__cell">3</td>
+                            <!-- Elemento td que define una celda de datos con el ID 3 -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">María Ruiz</td>
+                            <!-- Elemento td que define una celda de datos con el nombre María Ruiz -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">maria@example.com</td>
+                            <!-- Elemento td que define una celda de datos con el correo de María -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                             <td class="data-table__cell">Editor</td>
+                            <!-- Elemento td que define una celda de datos con el rol Editor -->
+                            <!-- Clase CSS siguiendo metodología BEM para las celdas de la tabla -->
                         </tr>
                     </tbody>
                 </table>
@@ -48,4 +118,6 @@
         </main>
     </div>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->

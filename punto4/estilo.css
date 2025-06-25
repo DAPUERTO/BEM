@@ -1,130 +1,211 @@
 /* Reset global */
 * {
+    /* Selector universal que aplica estilos a todos los elementos */
     margin: 0;
+    /* Elimina todos los márgenes externos de todos los elementos */
     padding: 0;
+    /* Elimina todo el relleno interno de todos los elementos */
     box-sizing: border-box;
+    /* Incluye padding y border en el ancho y alto total del elemento */
 }
 
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: Arial, sans-serif;
+    /* Define la fuente principal como Arial, con fallback a sans-serif */
     background: #f0f0f0;
+    /* Establece el color de fondo como un gris claro */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
 }
 
 /* Contenedor principal */
 .container {
+    /* Estilos para el contenedor principal de la página */
     max-width: 600px;
+    /* Limita el ancho máximo a 600px para mejor legibilidad */
     margin: 0 auto;
+    /* Centra el contenedor horizontalmente usando márgenes automáticos */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
 }
 
 /* Header */
 .header {
+    /* Estilos para el encabezado de la página */
     text-align: center;
+    /* Centra todo el contenido del encabezado horizontalmente */
     margin-bottom: 30px;
+    /* Agrega margen inferior de 30px para separar del siguiente elemento */
 }
 
 .header__title {
+    /* Estilos para el título principal del encabezado */
     font-size: 2rem;
+    /* Establece el tamaño de fuente como 2 veces el tamaño base */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del subtítulo */
 }
 
 .header__subtitle {
+    /* Estilos para el subtítulo del encabezado */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
     color: #666;
+    /* Define el color del texto como un gris medio */
 }
 
 /* Componente de lista de tareas */
 .todo {
+    /* Estilos para la sección de lista de tareas */
     margin-bottom: 40px;
+    /* Agrega margen inferior de 40px para separar del siguiente elemento */
 }
 
 .todo__container {
+    /* Estilos para el contenedor de la lista de tareas */
     background: white;
+    /* Establece el fondo del contenedor como blanco */
     border: 1px solid #ccc;
+    /* Agrega un borde de 1px sólido en color gris claro */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
     border-radius: 10px;
+    /* Redondea las esquinas del contenedor con un radio de 10px */
 }
 
 .todo__title {
+    /* Estilos para el título de la lista de tareas */
     font-size: 1.5rem;
+    /* Establece el tamaño de fuente como 1.5 veces el tamaño base */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     text-align: center;
+    /* Centra el texto horizontalmente */
     margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar del formulario */
 }
 
 /* Formulario de tareas */
 .todo-form {
+    /* Estilos para el formulario de agregar tareas */
     margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar de la lista */
 }
 
 .todo-form__group {
+    /* Estilos para el grupo de elementos del formulario */
     margin-bottom: 15px;
+    /* Agrega margen inferior de 15px para separar elementos */
 }
 
 .todo-form__input {
+    /* Estilos para el campo de entrada de texto */
     width: 70%;
+    /* El campo ocupa el 70% del ancho disponible */
     padding: 8px;
+    /* Agrega relleno interno de 8px en todos los lados */
     border: 1px solid #ccc;
+    /* Agrega un borde de 1px sólido en color gris claro */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
 }
 
 .todo-form__button {
+    /* Estilos para el botón de agregar tarea */
     padding: 8px 15px;
+    /* Agrega relleno interno de 8px vertical y 15px horizontal */
     background: #333;
+    /* Establece el color de fondo del botón como gris oscuro */
     color: white;
+    /* Define el color del texto como blanco */
     border: none;
+    /* Elimina el borde del botón */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
     cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
     margin-left: 10px;
+    /* Agrega margen izquierdo de 10px para separar del campo de texto */
     border-radius: 5px;
+    /* Redondea las esquinas del botón con un radio de 5px */
 }
 
 .todo-form__button:hover {
+    /* Estilos aplicados cuando el cursor está sobre el botón */
     background: #555;
+    /* Cambia el color de fondo a un gris más claro */
     border-radius: 5px;
+    /* Mantiene las esquinas redondeadas */
 }
 
 /* Lista de tareas */
 .todo-list {
+    /* Estilos para la lista de tareas */
     width: 100%;
+    /* La lista ocupa todo el ancho disponible */
 }
 
 .todo-list__item {
+    /* Estilos para cada ítem individual de la lista */
     padding: 10px;
+    /* Agrega relleno interno de 10px en todos los lados */
     margin-bottom: 5px;
+    /* Agrega margen inferior de 5px para separar los ítems */
     background: #f9f9f9;
+    /* Establece el fondo de cada ítem como un gris muy claro */
     border: 1px solid #ddd;
+    /* Agrega un borde de 1px sólido en color gris claro */
     
 }
 
 .todo-list__checkbox {
+    /* Estilos para los checkboxes de las tareas */
     margin-right: 10px;
+    /* Agrega margen derecho de 10px para separar del texto */
 }
 
 .todo-list__label {
+    /* Estilos para las etiquetas de las tareas */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre la etiqueta */
 }
 
 .todo-list__delete {
+    /* Estilos para los botones de eliminar tareas */
     float: right;
+    /* Hace que el botón flote hacia la derecha */
     padding: 5px 10px;
+    /* Agrega relleno interno de 5px vertical y 10px horizontal */
     background: #3123b3;
+    /* Establece el color de fondo del botón como azul oscuro */
     color: white;
+    /* Define el color del texto como blanco */
     border: none;
+    /* Elimina el borde del botón */
     cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
     border-radius: 5px;
+    /* Redondea las esquinas del botón con un radio de 5px */
 }
 
 .todo-list__delete:hover {
+    /* Estilos aplicados cuando el cursor está sobre el botón de eliminar */
     background: #cc0000;
+    /* Cambia el color de fondo a rojo */
 }
 
 /* Estados de checkbox */
 .todo-list__checkbox:checked + .todo-list__label {
+    /* Estilos para las etiquetas cuando el checkbox está marcado */
     text-decoration: line-through;
+    /* Agrega una línea tachada al texto */
     color: #999;
+    /* Cambia el color del texto a un gris claro */
 }

@@ -1,36 +1,106 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+  <!-- Sección de metadatos del documento -->
   <meta charset="UTF-8">
+  <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
   <title>Sistema de Calificaciones</title>
+  <!-- Define el título de la página que aparece en la pestaña del navegador -->
   <link rel="stylesheet" href="estilos.css">
+  <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <header class="tabs__header">
+    <!-- Elemento semántico header que contiene el encabezado del sistema de calificaciones -->
+    <!-- Clase CSS "tabs__header" siguiendo metodología BEM para el encabezado -->
         <a href="../index.html" class="tabs__header-link">Volver</a>
+        <!-- Enlace para regresar a la página principal -->
+        <!-- href="../index.html" apunta al archivo index.html en el directorio padre -->
+        <!-- Clase CSS siguiendo metodología BEM para el enlace del encabezado -->
         <h1 class="tabs__header-title">Punto 11 Componente de sistema de calificaciones.</h1>
+        <!-- Encabezado de nivel 1 para el título del sistema de calificaciones -->
+        <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
         <h2 class="tabs__header-subtitle">Selecciona una calificación del 1 al 5</h2>
+        <!-- Encabezado de nivel 2 para el subtítulo explicativo -->
+        <!-- Clase CSS siguiendo metodología BEM para el subtítulo del encabezado -->
     </header>
   <main class="calificacion">
+  <!-- Elemento semántico main que contiene el sistema de calificaciones -->
+  <!-- Clase CSS "calificacion" siguiendo metodología BEM para el sistema de calificaciones -->
     <div class="calificacion">
+    <!-- Contenedor para el grupo de calificaciones -->
+    <!-- Clase CSS "calificacion" siguiendo metodología BEM para el contenedor de calificaciones -->
       <input type="radio" name="calificacion" id="calificacion-1" class="calificacion__radio" value="1">
+      <!-- Radio button para la calificación 1 -->
+      <!-- type="radio" especifica que es un botón de radio -->
+      <!-- name="calificacion" agrupa todos los radio buttons para que solo uno pueda estar seleccionado -->
+      <!-- id="calificacion-1" identifica únicamente este radio button -->
+      <!-- Clase CSS siguiendo metodología BEM para los radio buttons -->
+      <!-- value="1" especifica el valor que se enviará cuando este radio button esté seleccionado -->
       <label for="calificacion-1" class="calificacion__label">1</label>
+      <!-- Etiqueta asociada al radio button de calificación 1 -->
+      <!-- for="calificacion-1" vincula la etiqueta con el radio button correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para las etiquetas de calificación -->
 
       <input type="radio" name="calificacion" id="calificacion-2" class="calificacion__radio" value="2">
+      <!-- Radio button para la calificación 2 -->
+      <!-- type="radio" especifica que es un botón de radio -->
+      <!-- name="calificacion" agrupa todos los radio buttons para que solo uno pueda estar seleccionado -->
+      <!-- id="calificacion-2" identifica únicamente este radio button -->
+      <!-- Clase CSS siguiendo metodología BEM para los radio buttons -->
+      <!-- value="2" especifica el valor que se enviará cuando este radio button esté seleccionado -->
       <label for="calificacion-2" class="calificacion__label">2</label>
+      <!-- Etiqueta asociada al radio button de calificación 2 -->
+      <!-- for="calificacion-2" vincula la etiqueta con el radio button correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para las etiquetas de calificación -->
 
       <input type="radio" name="calificacion" id="calificacion-3" class="calificacion__radio" value="3">
+      <!-- Radio button para la calificación 3 -->
+      <!-- type="radio" especifica que es un botón de radio -->
+      <!-- name="calificacion" agrupa todos los radio buttons para que solo uno pueda estar seleccionado -->
+      <!-- id="calificacion-3" identifica únicamente este radio button -->
+      <!-- Clase CSS siguiendo metodología BEM para los radio buttons -->
+      <!-- value="3" especifica el valor que se enviará cuando este radio button esté seleccionado -->
       <label for="calificacion-3" class="calificacion__label">3</label>
+      <!-- Etiqueta asociada al radio button de calificación 3 -->
+      <!-- for="calificacion-3" vincula la etiqueta con el radio button correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para las etiquetas de calificación -->
 
       <input type="radio" name="calificacion" id="calificacion-4" class="calificacion__radio" value="4">
+      <!-- Radio button para la calificación 4 -->
+      <!-- type="radio" especifica que es un botón de radio -->
+      <!-- name="calificacion" agrupa todos los radio buttons para que solo uno pueda estar seleccionado -->
+      <!-- id="calificacion-4" identifica únicamente este radio button -->
+      <!-- Clase CSS siguiendo metodología BEM para los radio buttons -->
+      <!-- value="4" especifica el valor que se enviará cuando este radio button esté seleccionado -->
       <label for="calificacion-4" class="calificacion__label">4</label>
+      <!-- Etiqueta asociada al radio button de calificación 4 -->
+      <!-- for="calificacion-4" vincula la etiqueta con el radio button correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para las etiquetas de calificación -->
 
       <input type="radio" name="calificacion" id="calificacion-5" class="calificacion__radio" value="5">
+      <!-- Radio button para la calificación 5 -->
+      <!-- type="radio" especifica que es un botón de radio -->
+      <!-- name="calificacion" agrupa todos los radio buttons para que solo uno pueda estar seleccionado -->
+      <!-- id="calificacion-5" identifica únicamente este radio button -->
+      <!-- Clase CSS siguiendo metodología BEM para los radio buttons -->
+      <!-- value="5" especifica el valor que se enviará cuando este radio button esté seleccionado -->
       <label for="calificacion-5" class="calificacion__label">5</label>
+      <!-- Etiqueta asociada al radio button de calificación 5 -->
+      <!-- for="calificacion-5" vincula la etiqueta con el radio button correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para las etiquetas de calificación -->
     </div>
     <button class="calificacion__button" onclick="mostrarCalificacion()">Enviar Calificación</button>
+    <!-- Botón para enviar la calificación seleccionada -->
+    <!-- Clase CSS siguiendo metodología BEM para el botón de calificación -->
+    <!-- onclick="mostrarCalificacion()" ejecuta la función JavaScript cuando se hace clic en el botón -->
   </main>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->
 
 

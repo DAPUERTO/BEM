@@ -1,121 +1,220 @@
+/* ========================================================================== 
+   Custom Properties (Variables CSS) - Solo Colores
+   ========================================================================== */
+:root {
+    /* Colores principales */
+    --color-primary: #e5e900;
+    --color-primary-dark: #218838;
+    --color-secondary: #739982;
+    --color-text-dark: rgb(10, 5, 5);
+    --color-text-light: white;
+    --color-background-light: #f4f4f4;
+    --color-background-gray: #ddd;
+    --color-background-white: #fff;
+    --color-background-dark: #333;
+    --color-border-light: #ccc;
+    --color-border-gray: #eee;
+}
+
 /* Estilos generales */
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: Arial, sans-serif;
+    /* Define la fuente principal como Arial, con fallback a sans-serif */
     margin: 0;
+    /* Elimina todos los márgenes externos */
     padding: 0;
+    /* Elimina todo el relleno interno */
 }
 
 .header {
-    background-color: #e5e900;
-    color: white;
+    /* Estilos para el encabezado de la página */
+    background-color: var(--color-primary);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
     padding: 10px;
+    /* Agrega relleno interno de 10px en todos los lados */
     font-size: 20px;
+    /* Establece el tamaño de fuente como 20px */
     text-align: center;
+    /* Centra todo el contenido horizontalmente */
 }
 
 .header__logo {
+    /* Estilos para el logo/marca del encabezado */
     font-size: 25px;
+    /* Establece el tamaño de fuente como 25px */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del menú */
     font-weight: bold;
+    /* Hace que el texto sea negrita */
     font-family: 'Times New Roman', Times, serif;
-    color: #739982;
+    /* Define la fuente como Times New Roman con fallbacks */
+    color: var(--color-secondary);
+    /* Define el color del texto usando variable CSS */
 }
 
 .header__menu {
+    /* Estilos para la lista del menú de navegación */
     list-style: none;
+    /* Elimina los marcadores de lista (puntos) */
     padding: 0;
+    /* Elimina el relleno interno por defecto */
     margin: 0;
+    /* Elimina los márgenes por defecto */
 }
 
 .header__menu-item {
+    /* Estilos para cada elemento del menú */
     display: inline-block;
+    /* Hace que cada ítem se comporte como un bloque en línea */
     margin: 0 10px;
+    /* Agrega margen de 0 vertical y 10px horizontal para separar los elementos */
 }
 
 .header__menu-item a {
-    color: rgb(10, 5, 5);
+    /* Estilos para los enlaces del menú */
+    color: var(--color-text-dark);
+    /* Define el color del texto usando variable CSS */
     text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
 }
 
 .banner {
-    background-color: #f4f4f4;
+    /* Estilos para la sección del banner */
+    background-color: var(--color-background-light);
+    /* Establece el color de fondo usando variable CSS */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
     text-align: center;
+    /* Centra todo el contenido horizontalmente */
 }
 
 .banner__title {
+    /* Estilos para el título del banner */
     font-size: 32px;
+    /* Establece el tamaño de fuente como 32px */
     margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar de la imagen */
 }
 
 .banner__image {
+    /* Estilos para la imagen del banner */
     width: 100%;
-    background-color: #ddd;
+    /* La imagen ocupa todo el ancho disponible */
+    background-color: var(--color-background-gray);
+    /* Establece el color de fondo usando variable CSS */
 }
 
 .products {
+    /* Estilos para la sección de productos */
     padding: 20px;
+    /* Agrega relleno interno de 20px en todos los lados */
     text-align: center;
+    /* Centra todo el contenido horizontalmente */
 }
 
 .products__title {
+    /* Estilos para el título de la sección de productos */
     font-size: 28px;
+    /* Establece el tamaño de fuente como 28px */
     margin-bottom: 20px;
+    /* Agrega margen inferior de 20px para separar de la lista */
 }
 
 .products__list {
+    /* Estilos para la lista de productos */
     text-align: center;
+    /* Centra todo el contenido horizontalmente */
 }
 
 .product-card {
+    /* Estilos para cada tarjeta de producto */
     display: inline-block;
+    /* Hace que cada tarjeta se comporte como un bloque en línea */
     width: 250px;
+    /* Establece un ancho fijo de 250px para cada tarjeta */
     margin: 10px;
+    /* Agrega margen de 10px en todos los lados para separar las tarjetas */
     padding: 10px;
-    border: 2px solid #ccc;
+    /* Agrega relleno interno de 10px en todos los lados */
+    border: 2px solid var(--color-border-light);
+    /* Agrega un borde usando variable CSS */
     border-radius: 5px;
+    /* Redondea las esquinas de las tarjetas con un radio de 5px */
     vertical-align: top;
+    /* Alinea las tarjetas en la parte superior */
 }
 
 .product-card__image {
+    /* Estilos para las imágenes de los productos */
     width: 50%;
+    /* La imagen ocupa el 50% del ancho de la tarjeta */
     height: 150px;
-    background-color: #eee;
+    /* Establece una altura fija de 150px para las imágenes */
+    background-color: var(--color-border-gray);
+    /* Establece el color de fondo usando variable CSS */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del título */
 }
 
 .product-card__title {
+    /* Estilos para los títulos de los productos */
     font-size: 20px;
+    /* Establece el tamaño de fuente como 20px */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar de la descripción */
 }
 
 .product-card__description {
+    /* Estilos para las descripciones de los productos */
     font-size: 14px;
+    /* Establece el tamaño de fuente como 14px */
     margin-bottom: 10px;
+    /* Agrega margen inferior de 10px para separar del botón */
 }
 
 .product-card__button {
+    /* Estilos para los botones de "Agregar al carrito" */
     padding: 8px 16px;
-    background-color: #28a745;
-    color: white;
+    /* Agrega relleno interno de 8px vertical y 16px horizontal */
+    background-color: var(--color-primary-dark);
+    /* Establece el color de fondo del botón usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
     border: none;
+    /* Elimina el borde del botón */
     cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
     border-radius: 5px;
+    /* Redondea las esquinas del botón con un radio de 5px */
 }
 
 .product-card__button:hover {
-    background-color: #218838;
+    /* Estilos aplicados cuando el cursor está sobre el botón */
+    background-color: var(--color-primary-dark);
+    /* Cambia el color de fondo usando variable CSS */
 }
 
 .footer {
-    background-color: #333;
-    color: white;
+    /* Estilos para el pie de página */
+    background-color: var(--color-background-dark);
+    /* Establece el color de fondo usando variable CSS */
+    color: var(--color-text-light);
+    /* Define el color del texto usando variable CSS */
     text-align: center;
+    /* Centra todo el contenido horizontalmente */
     padding: 10px;
+    /* Agrega relleno interno de 10px en todos los lados */
     margin-top: 20px;
+    /* Agrega margen superior de 20px para separar del contenido principal */
 }
 
 .footer__text {
+    /* Estilos para el texto del footer */
     margin: 10px;
+    /* Agrega margen de 10px en todos los lados */
     padding: 10px;
+    /* Agrega relleno interno de 10px en todos los lados */
 }

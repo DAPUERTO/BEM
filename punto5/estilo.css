@@ -1,65 +1,112 @@
 * {
+    /* Selector universal que aplica estilos a todos los elementos */
     margin: 0;
+    /* Elimina todos los márgenes externos de todos los elementos */
     padding: 0;
+    /* Elimina todo el relleno interno de todos los elementos */
     box-sizing: border-box;
+    /* Incluye padding y border en el ancho y alto total del elemento */
 }
 
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: Arial, sans-serif;
+    /* Define la fuente principal como Arial, con fallback a sans-serif */
     background-color: #dfdfdf;
+    /* Establece el color de fondo como un gris claro */
     color: #1e9839;
+    /* Define el color del texto como verde */
     min-height: 100vh;
+    /* Asegura que el body tenga al menos la altura completa de la ventana */
     text-align: center;
+    /* Centra todo el contenido horizontalmente */
 
 }
 
 .gallery {
+    /* Estilos para la sección de galería */
     padding: 2rem 0;
+    /* Agrega relleno interno de 2rem vertical y 0 horizontal */
 }
 
 .gallery__title {
+    /* Estilos para el título de la galería */
     text-align: center;
+    /* Centra el texto horizontalmente */
     font-size: 2rem;
+    /* Establece el tamaño de fuente como 2 veces el tamaño base */
     margin-bottom: 1.5rem;
+    /* Agrega margen inferior de 1.5rem para separar del grid */
 }
 
 .gallery__grid {
+    /* Estilos para la cuadrícula de imágenes */
     text-align: center;
+    /* Centra el contenido horizontalmente */
     font-size: 0; /* Elimina espacios entre inline-block */
+    /* Establece el tamaño de fuente en 0 para eliminar espacios entre elementos inline-block */
 }
 
 .gallery__item {
+    /* Estilos para cada ítem individual de la galería */
     display: inline-block;
+    /* Hace que cada ítem se comporte como un bloque en línea */
     background: #a3b473;
+    /* Establece el fondo de cada ítem como un verde oliva claro */
     border-radius: 8px;
+    /* Redondea las esquinas de cada ítem con un radio de 8px */
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /* Agrega una sombra sutil debajo de cada ítem */
     padding: 1rem;
+    /* Agrega relleno interno de 1rem en todos los lados */
     text-align: center;
+    /* Centra el contenido de cada ítem horizontalmente */
     margin: 0.75rem 0.5rem;
+    /* Agrega margen de 0.75rem vertical y 0.5rem horizontal para separar los ítems */
     vertical-align: top;
+    /* Alinea los ítems en la parte superior */
     width: 220px;
+    /* Establece un ancho fijo de 220px para cada ítem */
     font-size: 1rem; /* Restaura el tamaño de fuente */
+    /* Restaura el tamaño de fuente a 1rem para el contenido interno */
 }
 
 .gallery__item:hover {
+    /* Estilos aplicados cuando el cursor está sobre un ítem */
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    /* Aumenta la sombra para crear un efecto de elevación */
 }
 
 .gallery__image {
+    /* Estilos para las imágenes dentro de cada ítem */
     width: 180px;
+    /* Establece un ancho fijo de 180px para las imágenes */
     height: 180px;
+    /* Establece una altura fija de 180px para las imágenes */
     max-width: 100%;
+    /* Asegura que la imagen no exceda el ancho del contenedor */
     border-radius: 4px;
+    /* Redondea las esquinas de las imágenes con un radio de 4px */
     margin-bottom: 0.5rem;
+    /* Agrega margen inferior de 0.5rem para separar de la descripción */
     background-color: white;
+    /* Establece el fondo de las imágenes como blanco */
     object-fit: contain;
+    /* Mantiene la proporción de la imagen sin recortarla */
     display: block;
+    /* Hace que la imagen se comporte como un bloque */
     margin-left: auto;
+    /* Centra la imagen horizontalmente usando margen automático izquierdo */
     margin-right: auto;
+    /* Centra la imagen horizontalmente usando margen automático derecho */
 }
 
 .gallery__caption {
+    /* Estilos para las descripciones de las imágenes */
     font-size: 1rem;
+    /* Establece el tamaño de fuente como 1 vez el tamaño base */
     color: #333;
+    /* Define el color del texto como un gris oscuro */
     margin: 0;
+    /* Elimina todos los márgenes */
 }

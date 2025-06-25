@@ -2,85 +2,140 @@
    Base y estilos globales
    ========================================================================== */
 * {
+    /* Selector universal que aplica estilos a todos los elementos */
     padding: 0; /* Elimina el padding por defecto */
+    /* Elimina todo el relleno interno de todos los elementos */
     margin: 0; /* Elimina el margen por defecto */
+    /* Elimina todos los márgenes externos de todos los elementos */
     box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+    /* Incluye padding y border en el ancho y alto total del elemento */
 }
 
 body {
+    /* Estilos para el elemento body (cuerpo de la página) */
     font-family: sans-serif; /* Fuente sin serifas */
+    /* Define la fuente principal como sans-serif genérica */
     background-color: #f8fafd; /* Fondo azul muy claro */
+    /* Establece el color de fondo como un azul muy claro */
     color: #333; /* Color de texto gris oscuro */
+    /* Define el color del texto como un gris oscuro */
 }
 
 
 
 .tabs {
+  /* Estilos para el contenedor principal de pestañas */
   width: 400px;
+  /* Establece un ancho fijo de 400px para el contenedor */
   margin: 40px auto;
+  /* Centra el contenedor horizontalmente con margen automático y 40px vertical */
   font-family: Arial, sans-serif;
+  /* Define la fuente como Arial con fallback a sans-serif */
   border: 1px solid #ccc;
+  /* Agrega un borde de 1px sólido en color gris claro */
   border-radius: 6px;
+  /* Redondea las esquinas del contenedor con un radio de 6px */
   background: #fafafa;
+  /* Establece el fondo del contenedor como un gris muy claro */
 }
 
 .tabs__header-title {
+  /* Estilos para el título del encabezado de pestañas */
   padding: 20px;
+  /* Agrega relleno interno de 20px en todos los lados */
   font-size: 34px;
+  /* Establece el tamaño de fuente como 34px */
   text-align: center;
+  /* Centra el texto horizontalmente */
   color: #9c2020;
+  /* Define el color del texto como un rojo oscuro */
   border-bottom: 1px solid #1dc2d8;
+  /* Agrega un borde inferior de 1px sólido en color azul claro */
 }
 .tabs__header-link {
+    /* Estilos para el enlace del encabezado */
     display: inline-block; /* Permite padding */
+    /* Hace que el enlace se comporte como un bloque en línea */
     background-color: #a15353; /* Fondo gris oscuro */
+    /* Establece el color de fondo como un marrón rojizo */
     color: #fff; /* Texto blanco */
+    /* Define el color del texto como blanco */
     padding: 10px 20px; /* Espaciado interno */
+    /* Agrega relleno interno de 10px vertical y 20px horizontal */
     text-decoration: none; /* Sin subrayado */
+    /* Elimina el subrayado del enlace */
     border-radius: 5px; /* Bordes redondeados */
+    /* Redondea las esquinas del enlace con un radio de 5px */
     font-size: 16px; /* Tamaño de fuente */
+    /* Establece el tamaño de fuente como 16px */
     transition: background-color 0.2s ease; /* Transición suave */
+    /* Aplica una transición suave de 0.2s para cambios de color de fondo */
 }
 
 .tabs__nav {
+  /* Estilos para la navegación de pestañas */
   border-bottom: 1px solid #ccc;
+  /* Agrega un borde inferior de 1px sólido en color gris claro */
   padding: 10 10px;
+  /* Agrega relleno interno de 10px horizontal */
   text-align: left;
+  /* Alinea el contenido a la izquierda */
   
 }
 
 .tabs__nav-link {
+  /* Estilos para los enlaces de navegación de pestañas */
   display: inline-block;
+  /* Hace que cada enlace se comporte como un bloque en línea */
   padding: 12px 24px;
+  /* Agrega relleno interno de 12px vertical y 24px horizontal */
   margin-right: 4px;
+  /* Agrega margen derecho de 4px para separar los enlaces */
   text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
   color: #333;
+  /* Define el color del texto como un gris oscuro */
   border: none;
+  /* Elimina el borde de los enlaces */
   border-bottom: 2px solid transparent;
+  /* Agrega un borde inferior transparente de 2px */
   background: none;
+  /* No establece fondo para los enlaces */
   font-size: 16px;
+  /* Establece el tamaño de fuente como 16px */
   cursor: pointer;
+  /* Cambia el cursor a una mano cuando se pasa sobre los enlaces */
   transition: border-color 0.2s, color 0.2s;
+  /* Aplica transiciones suaves de 0.2s para cambios de borde y color */
 }
 
 .tabs__nav-link:target,
 .tabs__nav-link:focus,
 .tabs__nav-link:active {
+  /* Estilos para enlaces cuando están enfocados o activos */
   outline: none;
+  /* Elimina el contorno por defecto del navegador */
 }
 
 .tabs__panel {
+  /* Estilos para los paneles de contenido de las pestañas */
   display: none;
+  /* Oculta todos los paneles por defecto */
   padding: 20px;
+  /* Agrega relleno interno de 20px en todos los lados */
 }
 
 .tabs__panel:target {
+  /* Estilos para el panel que coincide con el target actual */
   display: block;
+  /* Muestra el panel como un bloque */
 }
 
 /* Mostrar la primera pestaña por defecto si no hay :target */
 .tabs__panel:first-of-type {
+  /* Estilos para el primer panel de pestañas */
   display: block;
+  /* Muestra el primer panel por defecto */
 }
 
 /* Estilos para la pestaña activa */
@@ -88,29 +143,44 @@ body {
 .tabs__nav-link[href="#tab1"]:active,
 #tab1:target ~ .tabs__nav .tabs__nav-link[href="#tab1"],
 .tabs__panel:target ~ .tabs__nav .tabs__nav-link[href="#tab1"] {
+  /* Estilos para la primera pestaña cuando está activa */
   border-bottom: 2px solid #0078d7;
+  /* Cambia el borde inferior a azul */
   color: #0078d7;
+  /* Cambia el color del texto a azul */
   font-weight: bold;
+  /* Hace que el texto sea negrita */
   background: #fff;
+  /* Establece el fondo como blanco */
 }
 
 .tabs__nav-link[href="#tab2"]:focus,
 .tabs__nav-link[href="#tab2"]:active,
 #tab2:target ~ .tabs__nav .tabs__nav-link[href="#tab2"],
 .tabs__panel:target ~ .tabs__nav .tabs__nav-link[href="#tab2"] {
+  /* Estilos para la segunda pestaña cuando está activa */
   border-bottom: 2px solid #0078d7;
+  /* Cambia el borde inferior a azul */
   color: #0078d7;
+  /* Cambia el color del texto a azul */
   font-weight: bold;
+  /* Hace que el texto sea negrita */
   background: #fff;
+  /* Establece el fondo como blanco */
 }
 
 .tabs__nav-link[href="#tab3"]:focus,
 .tabs__nav-link[href="#tab3"]:active,
 #tab3:target ~ .tabs__nav .tabs__nav-link[href="#tab3"],
 .tabs__panel:target ~ .tabs__nav .tabs__nav-link[href="#tab3"] {
+  /* Estilos para la tercera pestaña cuando está activa */
   border-bottom: 2px solid #0078d7;
+  /* Cambia el borde inferior a azul */
   color: #0078d7;
+  /* Cambia el color del texto a azul */
   font-weight: bold;
+  /* Hace que el texto sea negrita */
   background: #fff;
+  /* Establece el fondo como blanco */
 }
 

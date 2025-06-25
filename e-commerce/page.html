@@ -1,63 +1,103 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma español -->
 <head>
+    <!-- Sección de metadatos del documento -->
     <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 para soporte completo de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura la vista para dispositivos móviles con ancho completo y escala inicial 1.0 -->
     <title>Tienda Online</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
     <link rel="stylesheet" href="estilos.css">
+    <!-- Enlaza el archivo CSS externo para los estilos de la página -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML -->
 
     <header class="header">
+        <!-- Encabezado de la página con clase BEM para estilos -->
         <div class="header__logo"> PUERTO SHOPPING</div>
+        <!-- Logo/marca de la tienda con clase BEM siguiendo la metodología -->
         <nav class="header__nav">
+            <!-- Elemento de navegación semántico para el menú principal -->
             <ul class="header__menu">
+                <!-- Lista desordenada del menú de navegación -->
                 <li class="header__menu-item"><a href="#">SNEAKERS</a></li>
+                <!-- Elemento de lista para la categoría de zapatillas deportivas -->
                 <li class="header__menu-item"><a href="#">MUJER</a></li>
+                <!-- Elemento de lista para la categoría de productos para mujer -->
                 <li class="header__menu-item"><a href="#">HOMBRE</a></li>
+                <!-- Elemento de lista para la categoría de productos para hombre -->
                 <li class="header__menu-item"><a href="#">BEBES</a></li>
-                <li class="header__menu-item"><a href="#">Hogar</a></li>
-                <li class="header__menu-item"><a href="#">Ofertas</a></li>
+                <!-- Elemento de lista para la categoría de productos para bebés -->
+                <li class="header__menu-item"><a href="#">SMARTPHONES</a></li>
+                <!-- Elemento de lista para la categoría de smartphones -->
+                <li class="header__menu-item"><a href="#">OFERTAS</a></li>
+                <!-- Elemento de lista para la sección de ofertas especiales -->
                 
             </ul>
         </nav>
     </header>
 
     <main class="main">
+        <!-- Contenido principal de la página con elemento semántico main -->
 
         <section class="banner">
+            <!-- Sección del banner principal con clase BEM -->
             <h1 class="banner__title">Smartphones</h1>
+            <!-- Título principal de la página con jerarquía H1 y clase BEM -->
            
-            <img class="banner__image" src="../imagenes/www.unsitiogneial.es.png" alt=Banner Principal">
+            <img class="banner__image" src="../imagenes/www.unsitiogneial.es.png" alt="Banner Principal">
+            <!-- Imagen del banner principal con clase BEM y texto alternativo para accesibilidad -->
             
         </section>
 
         <section class="products">
+            <!-- Sección de productos con clase BEM -->
             <h2 class="products__title">Nuestros Productos</h2>
+            <!-- Título de la sección de productos con jerarquía H2 y clase BEM -->
 
             <div class="products__list">
+                <!-- Contenedor de la lista de productos con clase BEM -->
 
                 <div class="product-card">
+                    <!-- Tarjeta de producto individual con clase BEM -->
                     <img class="product-card__image" src="../imagenes/oppo-a60-256gb-8gb-innovador-smartphone-blanco.jpg" alt="Imagen celular oppo">
+                    <!-- Imagen del producto OPPO con clase BEM y texto alternativo descriptivo -->
                     <h3 class="product-card__title">Celular OPPO A60 256GB Negro</h3>
+                    <!-- Título del producto con jerarquía H3 y clase BEM -->
                     <p class="product-card__description">Con OPPO A60 negro, experimenta un teléfono elegante y cómodo que definitivamente te hará sentir a la moda. .</p>
+                    <!-- Descripción del producto con clase BEM -->
                     <button class="product-card__button">Comprar</button>
+                    <!-- Botón de compra con clase BEM para acción de compra -->
                 </div>
 
                 <div class="product-card">
+                    <!-- Segunda tarjeta de producto individual con clase BEM -->
                     <img class="product-card__image" src="../imagenes/Redmi-Note-11-Azul-Ocaso.png" alt="Redmi-Note-11-Azul-Ocaso">
+                    <!-- Imagen del producto Redmi con clase BEM y texto alternativo -->
                     
                     <h3 class="product-card__title">Redmi Note 11 Azul Ocaso</h3>
+                    <!-- Título del producto Redmi con jerarquía H3 y clase BEM -->
                     <p class="product-card__description">Cámara dual con AI para fotos claras en cualquier momento Nuevo sistema de imagen con AI para una experiencia fotográfica mejorada.</p>
+                    <!-- Descripción del producto Redmi con clase BEM -->
                     <button class="product-card__button">Comprar</button>
+                    <!-- Botón de compra para el producto Redmi con clase BEM -->
                 </div>
 
                 <div class="product-card">
+                    <!-- Tercera tarjeta de producto individual con clase BEM -->
                     <img class="product-card__image" src="../imagenes/SAMSUNGA05KOROLOS10.jpg" alt="SAMSUNGA05KOROLOS10 3">
+                    <!-- Imagen del producto Samsung con clase BEM y texto alternativo -->
                     
                     <h3 class="product-card__title">Samsung Galaxy A05 Core 128GB Negro</h3>
+                    <!-- Título del producto Samsung con jerarquía H3 y clase BEM -->
                     <p class="product-card__description">cámaras traseras te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo..</p>
+                    <!-- Descripción del producto Samsung con clase BEM -->
                     <button class="product-card__button">Comprar</button>
+                    <!-- Botón de compra para el producto Samsung con clase BEM -->
                 </div>
 
             </div>
@@ -66,15 +106,24 @@
     </main>
 
     <footer class="footer">
-        <p class="footer__text">°copy; 2025 puertoshopping - Todos los derechos reservados</p>
+        <!-- Pie de página con elemento semántico footer y clase BEM -->
+        <p class="footer__text">copy 2025 puertoshopping - Todos los derechos reservados</p>
+        <!-- Texto de copyright con clase BEM -->
         <p class="footer__text">Contacto: puertoshopping@gmail.com</p>
+        <!-- Información de contacto por email con clase BEM -->
         <p class="footer__text">Telefono: 3001234567</p>
+        <!-- Información de contacto telefónico con clase BEM -->
         <p class="footer__text">Direccion: Calle 123 # 45-67</p>
+        <!-- Dirección física de la tienda con clase BEM -->
         <p class="footer__text">Ciudad: Giron</p>
+        <!-- Ciudad de ubicación con clase BEM -->
         <p class="footer__text">Pais: Colombia</p>
+        <!-- País de ubicación con clase BEM -->
         <p class="footer__text">Codigo postal: 111111</p>
+        <!-- Código postal con clase BEM -->
         
     </footer>
 
 </body>
 </html>
+<!-- Fin del documento HTML -->

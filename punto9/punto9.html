@@ -1,33 +1,79 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+  <!-- Sección de metadatos del documento -->
   <meta charset="UTF-8">
+  <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura la vista para dispositivos móviles, estableciendo el ancho al ancho del dispositivo y zoom inicial -->
   <title>Pestañas (Tabs) </title>
+  <!-- Define el título de la página que aparece en la pestaña del navegador -->
   <link rel="stylesheet" href="estilos.css">
+  <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <header class="tabs__header">
+    <!-- Elemento semántico header que contiene el encabezado de las pestañas -->
+    <!-- Clase CSS "tabs__header" siguiendo metodología BEM para el encabezado de pestañas -->
         <a href="../index.html" class="tabs__header-link">Volver</a>
+        <!-- Enlace para regresar a la página principal -->
+        <!-- href="../index.html" apunta al archivo index.html en el directorio padre -->
+        <!-- Clase CSS siguiendo metodología BEM para el enlace del encabezado -->
         <h1 class="tabs__header-title">Punto 9 Pestañas (tabs)</h1>
+        <!-- Encabezado de nivel 1 para el título de las pestañas -->
+        <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
     </header>
     <main>
+    <!-- Elemento semántico main que contiene el contenido principal de la página -->
         <div class="tabs">
+        <!-- Contenedor principal para el componente de pestañas -->
+        <!-- Clase CSS "tabs" siguiendo metodología BEM para el componente de pestañas -->
     <nav class="tabs__nav">
+      <!-- Elemento semántico nav que contiene la navegación de pestañas -->
+      <!-- Clase CSS siguiendo metodología BEM para la navegación de pestañas -->
       <a href="#tab1" class="tabs__nav-link" id="link-tab1">Pestaña 1</a>
+      <!-- Enlace para la primera pestaña -->
+      <!-- href="#tab1" apunta al elemento con id "tab1" -->
+      <!-- Clase CSS siguiendo metodología BEM para los enlaces de navegación -->
+      <!-- id="link-tab1" identifica únicamente este enlace -->
       <a href="#tab2" class="tabs__nav-link" id="link-tab2">Pestaña 2</a>
+      <!-- Enlace para la segunda pestaña -->
+      <!-- href="#tab2" apunta al elemento con id "tab2" -->
+      <!-- Clase CSS siguiendo metodología BEM para los enlaces de navegación -->
+      <!-- id="link-tab2" identifica únicamente este enlace -->
       <a href="#tab3" class="tabs__nav-link" id="link-tab3">Pestaña 3</a>
+      <!-- Enlace para la tercera pestaña -->
+      <!-- href="#tab3" apunta al elemento con id "tab3" -->
+      <!-- Clase CSS siguiendo metodología BEM para los enlaces de navegación -->
+      <!-- id="link-tab3" identifica únicamente este enlace -->
     </nav>
     <section id="tab1" class="tabs__panel">
+      <!-- Elemento semántico section que contiene el contenido de la primera pestaña -->
+      <!-- id="tab1" identifica únicamente este panel para el enlace correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para los paneles de pestañas -->
       <p>Contenido de la pestaña 1</p>
+      <!-- Párrafo con el contenido de la primera pestaña -->
     </section>
     <section id="tab2" class="tabs__panel">
+      <!-- Elemento semántico section que contiene el contenido de la segunda pestaña -->
+      <!-- id="tab2" identifica únicamente este panel para el enlace correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para los paneles de pestañas -->
       <p>Contenido de la pestaña 2</p>
+      <!-- Párrafo con el contenido de la segunda pestaña -->
     </section>
     <section id="tab3" class="tabs__panel">
+      <!-- Elemento semántico section que contiene el contenido de la tercera pestaña -->
+      <!-- id="tab3" identifica únicamente este panel para el enlace correspondiente -->
+      <!-- Clase CSS siguiendo metodología BEM para los paneles de pestañas -->
       <p>Contenido de la pestaña 3</p>
+      <!-- Párrafo con el contenido de la tercera pestaña -->
     </section>
   </div>
     </main>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->

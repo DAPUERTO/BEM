@@ -1,23 +1,56 @@
 <!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
 <html lang="es">
+<!-- Elemento raíz del documento HTML con atributo de idioma en español -->
 <head>
+  <!-- Sección de metadatos del documento -->
   <meta charset="UTF-8">
+  <!-- Define la codificación de caracteres UTF-8 para soporte de caracteres especiales -->
   <title>Reproductor de Video</title>
+  <!-- Define el título de la página que aparece en la pestaña del navegador -->
   <link rel="stylesheet" href="estilos.css">
+  <!-- Enlaza el archivo CSS externo para aplicar estilos al documento -->
 </head>
 <body>
+    <!-- Cuerpo principal del documento HTML donde va el contenido visible -->
     <header class="tabs__header">
+    <!-- Elemento semántico header que contiene el encabezado del reproductor de video -->
+    <!-- Clase CSS "tabs__header" siguiendo metodología BEM para el encabezado -->
         <a href="../index.html" class="tabs__header-link">Volver</a>
+        <!-- Enlace para regresar a la página principal -->
+        <!-- href="../index.html" apunta al archivo index.html en el directorio padre -->
+        <!-- Clase CSS siguiendo metodología BEM para el enlace del encabezado -->
         <h1 class="tabs__header-title">Punto 12 Componente de reproductor de video.</h1>
+        <!-- Encabezado de nivel 1 para el título del reproductor de video -->
+        <!-- Clase CSS siguiendo metodología BEM para el título del encabezado -->
        
     </header>
 
   <main class="reproductor-video">
+  <!-- Elemento semántico main que contiene el reproductor de video -->
+  <!-- Clase CSS "reproductor-video" siguiendo metodología BEM para el reproductor de video -->
     <h1 class="reproductor-video__titulo">Reproductor de Video</h1>
+    <!-- Encabezado de nivel 1 para el título del reproductor -->
+    <!-- Clase CSS siguiendo metodología BEM para el título del reproductor -->
     <iframe class="reproductor-video__video" width="914" height="514" src="https://www.youtube.com/embed/RNy9i93RVx0" title="bem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Elemento iframe que embebe el video de YouTube -->
+    <!-- Clase CSS siguiendo metodología BEM para el video del reproductor -->
+    <!-- width="914" especifica el ancho del iframe en píxeles -->
+    <!-- height="514" especifica la altura del iframe en píxeles -->
+    <!-- src="https://www.youtube.com/embed/RNy9i93RVx0" es la URL del video embebido de YouTube -->
+    <!-- title="bem" proporciona un título descriptivo para el iframe -->
+    <!-- frameborder="0" elimina el borde del iframe -->
+    <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" especifica las funcionalidades permitidas -->
+    <!-- referrerpolicy="strict-origin-when-cross-origin" define la política de referrer para seguridad -->
+    <!-- allowfullscreen permite que el video se reproduzca en pantalla completa -->
     <a href="../index.html" class="reproductor-video__titulo">Volver al menú</a>
+    <!-- Enlace para regresar al menú principal -->
+    <!-- href="../index.html" apunta al archivo index.html en el directorio padre -->
+    <!-- Clase CSS siguiendo metodología BEM para el enlace de volver -->
   </main>
 </body>
+<!-- Cierre del elemento body -->
 </html>
+<!-- Cierre del elemento html y fin del documento -->
 
 

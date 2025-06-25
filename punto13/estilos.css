@@ -1,0 +1,88 @@
+/* ========================================================================== 
+   Base y estilos globales
+   ========================================================================== */
+   * {
+    /* Selector universal que aplica estilos a todos los elementos */
+    padding: 0; /* Elimina el padding por defecto */
+    /* Elimina todo el relleno interno de todos los elementos */
+    margin: 0; /* Elimina el margen por defecto */
+    /* Elimina todos los márgenes externos de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y borde en el tamaño total */
+    /* Incluye padding y border en el ancho y alto total del elemento */
+}
+
+body {
+    /* Estilos para el elemento body (cuerpo de la página) */
+    font-family: sans-serif; /* Fuente sin serifas */
+    /* Define la fuente principal como sans-serif genérica */
+    background-color: #f8fafd; /* Fondo azul muy claro */
+    /* Establece el color de fondo como un azul muy claro */
+    color: #333; /* Color de texto gris oscuro */
+    /* Define el color del texto como un gris oscuro */
+}
+
+/* ========================================================================== 
+   Componente: Barra lateral (Sidebar)
+   ========================================================================== */
+.sidebar {
+    /* Estilos para la barra lateral */
+    width: 220px; /* Ancho fijo */
+    /* Establece un ancho fijo de 220px para la barra lateral */
+    background: #fff; /* Fondo blanco */
+    /* Establece el fondo de la barra lateral como blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    /* Agrega un borde de 1px sólido en color gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    /* Redondea las esquinas de la barra lateral con un radio de 8px */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Sombra sutil */
+    /* Agrega una sombra sutil debajo de la barra lateral */
+    padding: 300px 12px; /* Espaciado interno */
+    /* Agrega relleno interno de 300px vertical y 12px horizontal */
+    margin: 0px 0 0px 30px; /* Espacio a la izquierda */
+    /* Agrega margen izquierdo de 30px para separar del contenido principal */
+    float: left; /* Barra lateral a la izquierda */
+    /* Hace que la barra lateral flote hacia la izquierda */
+
+}
+
+.sidebar__titulo {
+    /* Estilos para el título de la barra lateral */
+    font-size: 1.2em; /* Tamaño de fuente */
+    /* Establece el tamaño de fuente como 1.2 veces el tamaño base */
+    margin-bottom: 10px; /* Espacio inferior */
+    /* Agrega margen inferior de 10px para separar de los enlaces */
+    color: #eb2525; /* Azul */
+    /* Define el color del texto como rojo */
+    text-align: center; /* Centra el texto */
+    /* Centra el texto horizontalmente */
+    margin: 10px;
+    /* Agrega margen de 10px en todos los lados */
+}
+
+.sidebar__enlace {
+    /* Estilos para los enlaces de la barra lateral */
+    display: block; /* Ocupa todo el ancho */
+    /* Hace que cada enlace ocupe todo el ancho disponible */
+    color: #4a5568; /* Gris oscuro */
+    /* Define el color del texto como un gris oscuro */
+    text-decoration: none; /* Sin subrayado */
+    /* Elimina el subrayado de los enlaces */
+    padding: 7px 0; /* Espaciado vertical */
+    /* Agrega relleno interno de 7px vertical y 0 horizontal */
+    border-radius: 4px; /* Bordes redondeados */
+    /* Redondea las esquinas de los enlaces con un radio de 4px */
+    transition: background 0.2s, color 0.2s; /* Transición suave */
+    /* Aplica transiciones suaves de 0.2s para cambios de fondo y color */
+    margin-bottom: 4px; /* Espacio inferior */
+    /* Agrega margen inferior de 4px para separar los enlaces */
+    margin: 40px;
+    /* Agrega margen de 40px en todos los lados */
+}
+
+.sidebar__enlace:hover {
+    /* Estilos aplicados cuando el cursor está sobre los enlaces */
+    background: #e3f0ff; /* Fondo azul claro */
+    /* Cambia el fondo a un azul claro */
+    color: #2563eb; /* Azul */
+    /* Cambia el color del texto a azul */
+}
