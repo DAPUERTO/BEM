@@ -142,10 +142,11 @@ body {
 }
 
 .product-card {
+    position: relative;
     /* Estilos para cada tarjeta de producto */
     display: inline-block;
     /* Hace que cada tarjeta se comporte como un bloque en línea */
-    width: 250px;
+    width: 240px;
     /* Establece un ancho fijo de 250px para cada tarjeta */
     margin: 10px;
     /* Agrega margen de 10px en todos los lados para separar las tarjetas */
@@ -209,6 +210,22 @@ body {
     /* Cambia el color de fondo usando variable CSS */
 }
 
+.product-card__burbuja {
+  background-color: red;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+  padding: 16px;
+  border-radius: 50%;
+  top: -60px;
+  left: 160px;
+}
+.product-card__burbuja__texto {
+  color: white;
+  text-align: center;
+  line-height: 10px;
+}
 .footer {
     /* Estilos para el pie de página */
     background-color: var(--color-background-dark);
