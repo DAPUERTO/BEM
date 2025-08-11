@@ -166,20 +166,22 @@ body {
 .product-card {
     position: relative;
     /* Estilos para cada tarjeta de producto */
-    display: inline-block;
-    /* Hace que cada tarjeta se comporte como un bloque en línea */
+    display: flex;
+    /* Usa flexbox para el layout interno de la tarjeta */
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    align-items: center;
+    /* Centra elementos horizontalmente */
     width: 240px;
-    /* Establece un ancho fijo de 250px para cada tarjeta */
-    margin: 10px;
-    /* Agrega margen de 10px en todos los lados para separar las tarjetas */
+    /* Establece un ancho fijo de 240px para cada tarjeta */
     padding: 10px;
     /* Agrega relleno interno de 10px en todos los lados */
     border: 2px solid var(--color-border-light);
     /* Agrega un borde usando variable CSS */
     border-radius: 5px;
     /* Redondea las esquinas de las tarjetas con un radio de 5px */
-    vertical-align: top;
-    /* Alinea las tarjetas en la parte superior */
+    gap: 10px;
+    /* Espacio entre elementos internos de la tarjeta */
 }
 
 .product-card__image {
@@ -190,24 +192,28 @@ body {
     /* Establece una altura fija de 150px para las imágenes */
     background-color: var(--color-border-gray);
     /* Establece el color de fondo usando variable CSS */
-    margin-bottom: 10px;
-    /* Agrega margen inferior de 10px para separar del título */
+    object-fit: contain;
+    /* Mantiene la proporción de la imagen */
+    flex-shrink: 0;
+    /* Evita que la imagen se reduzca */
 }
 
 .product-card__title {
     /* Estilos para los títulos de los productos */
     font-size: 20px;
     /* Establece el tamaño de fuente como 20px */
-    margin-bottom: 10px;
-    /* Agrega margen inferior de 10px para separar de la descripción */
+    text-align: center;
+    /* Centra el texto del título */
 }
 
 .product-card__description {
     /* Estilos para las descripciones de los productos */
     font-size: 14px;
     /* Establece el tamaño de fuente como 14px */
-    margin-bottom: 10px;
-    /* Agrega margen inferior de 10px para separar del botón */
+    text-align: center;
+    /* Centra el texto de la descripción */
+    flex-grow: 1;
+    /* Permite que la descripción ocupe el espacio disponible */
 }
 
 .product-card__button {
