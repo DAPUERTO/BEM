@@ -25,6 +25,12 @@ body {
     /* Elimina todos los márgenes externos */
     padding: 0;
     /* Elimina todo el relleno interno */
+    display: flex;
+    /* Usa flexbox para el layout del body */
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    min-height: 100vh;
+    /* Altura mínima de la ventana completa */
 }
 
 .header {
@@ -91,12 +97,16 @@ body {
     /* Estilos para el contenido principal de la página */
     background-color: var(--color-background-white);
     /* Establece el color de fondo usando variable CSS */
-    min-height: 100vh;
-    /* Establece una altura mínima del 100% de la altura de la ventana */
     padding: 0;
     /* Elimina el relleno interno por defecto */
     margin: 0;
     /* Elimina los márgenes por defecto */
+    display: flex;
+    /* Usa flexbox para el layout principal */
+    flex-direction: column;
+    /* Organiza secciones en columna */
+    flex-grow: 1;
+    /* Permite que main ocupe el espacio disponible */
 }
 
 .banner {
