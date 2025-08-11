@@ -36,17 +36,21 @@ body {
     padding: 10px;
     /* Agrega relleno interno de 10px en todos los lados */
     font-size: 30px;
-    /* Establece el tamaño de fuente como 20px */
-    text-align: center;
-    /* Centra todo el contenido horizontalmente */
+    /* Establece el tamaño de fuente como 30px */
+    display: flex;
+    /* Usa flexbox para el layout del header */
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    align-items: center;
+    /* Centra elementos horizontalmente */
+    gap: 10px;
+    /* Espacio entre logo y navegación */
 }
 
 .header__logo {
     /* Estilos para el logo/marca del encabezado */
     font-size: 50px;
-    /* Establece el tamaño de fuente como 25px */
-    margin-bottom: 10px;
-    /* Agrega margen inferior de 10px para separar del menú */
+    /* Establece el tamaño de fuente como 50px */
     font-weight: bold;
     /* Hace que el texto sea negrita */
     font-family: 'Times New Roman', Times, serif;
@@ -63,15 +67,17 @@ body {
     /* Elimina el relleno interno por defecto */
     margin: 0;
     /* Elimina los márgenes por defecto */
+    display: flex;
+    /* Usa flexbox para organizar elementos del menú */
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center;
+    /* Centra los elementos del menú */
+    gap: 20px;
+    /* Espacio entre elementos del menú */
 }
 
-.header__menu-item {
-    /* Estilos para cada elemento del menú */
-    display: inline-block;
-    /* Hace que cada ítem se comporte como un bloque en línea */
-    margin: 0 10px;
-    /* Agrega margen de 0 vertical y 10px horizontal para separar los elementos */
-}
+
 
 .header__menu-item a {
     /* Estilos para los enlaces del menú */
@@ -211,21 +217,23 @@ body {
 }
 
 .product-card__burbuja {
-  background-color: red;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin: 30px;
-  padding: 16px;
-  border-radius: 50%;
-  top: -60px;
-  left: 160px;
+    background-color: red;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    padding: 16px;
+    border-radius: 50%;
+    top: -60px;
+    left: 160px;
 }
+
 .product-card__burbuja__texto {
-  color: white;
-  text-align: center;
-  line-height: 10px;
+    color: white;
+    text-align: center;
+    line-height: 10px;
 }
+
 .footer {
     /* Estilos para el pie de página */
     background-color: var(--color-background-dark);
