@@ -133,22 +133,34 @@ body {
     /* Estilos para la sección de productos */
     padding: 20px;
     /* Agrega relleno interno de 20px en todos los lados */
-    text-align: center;
-    /* Centra todo el contenido horizontalmente */
+    display: flex;
+    /* Usa flexbox para el layout de productos */
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    align-items: center;
+    /* Centra elementos horizontalmente */
+    gap: 20px;
+    /* Espacio entre título y lista */
 }
 
 .products__title {
     /* Estilos para el título de la sección de productos */
     font-size: 28px;
     /* Establece el tamaño de fuente como 28px */
-    margin-bottom: 20px;
-    /* Agrega margen inferior de 20px para separar de la lista */
 }
 
 .products__list {
     /* Estilos para la lista de productos */
-    text-align: center;
-    /* Centra todo el contenido horizontalmente */
+    display: flex;
+    /* Usa flexbox para organizar las tarjetas de productos */
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+    gap: 20px;
+    /* Espacio entre tarjetas de productos */
+    max-width: 1200px;
+    /* Limita el ancho máximo del contenedor */
 }
 
 .product-card {
