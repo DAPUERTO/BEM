@@ -105,16 +105,20 @@ body {
     /* Establece el color de fondo usando variable CSS */
     padding: 20px;
     /* Agrega relleno interno de 20px en todos los lados */
-    text-align: center;
-    /* Centra todo el contenido horizontalmente */
+    display: flex;
+    /* Usa flexbox para el layout del banner */
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    align-items: center;
+    /* Centra elementos horizontalmente */
+    gap: 20px;
+    /* Espacio entre título e imagen */
 }
 
 .banner__title {
     /* Estilos para el título del banner */
     font-size: 32px;
     /* Establece el tamaño de fuente como 32px */
-    margin-bottom: 20px;
-    /* Agrega margen inferior de 20px para separar de la imagen */
 }
 
 .banner__image {
