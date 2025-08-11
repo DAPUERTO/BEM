@@ -262,18 +262,24 @@ body {
     /* Establece el color de fondo usando variable CSS */
     color: var(--color-text-light);
     /* Define el color del texto usando variable CSS */
-    text-align: center;
-    /* Centra todo el contenido horizontalmente */
     padding: 10px;
     /* Agrega relleno interno de 10px en todos los lados */
     margin-top: 20px;
     /* Agrega margen superior de 20px para separar del contenido principal */
+    display: flex;
+    /* Usa flexbox para el layout del footer */
+    flex-direction: column;
+    /* Organiza elementos en columna */
+    align-items: center;
+    /* Centra elementos horizontalmente */
+    gap: 5px;
+    /* Espacio entre elementos del footer */
 }
 
 .footer__text {
     /* Estilos para el texto del footer */
-    margin: 10px;
-    /* Agrega margen de 10px en todos los lados */
-    padding: 10px;
-    /* Agrega relleno interno de 10px en todos los lados */
+    margin: 0;
+    /* Elimina márgenes ya que flexbox maneja el espaciado */
+    padding: 5px;
+    /* Reduce el padding interno */
 }
